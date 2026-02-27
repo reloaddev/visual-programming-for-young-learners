@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://btlth6viynjvi"]
+
+[ext_resource type="Script" uid="uid://bfs52j1mkyo5l" path="res://Scripts/Orchestrator/bullet.torch" id="1_oduel"]
+[ext_resource type="Texture2D" uid="uid://cp0pr2faa4ud6" path="res://Assets/Shotgun/Bullet.png" id="1_xjght"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4mw4s"]
+radius = 2.0
+
+[node name="Bullet" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_oduel")
+
+[node name="Bullet" type="Sprite2D" parent="."]
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("1_xjght")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4mw4s")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(0.8592635, 0.8312291, 0.12406703, 1)
+energy = 0.5
+texture = ExtResource("1_xjght")
+texture_scale = 0.02
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 30.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

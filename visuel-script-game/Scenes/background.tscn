@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=3 uid="uid://dtrtc6qtcydxb"]
+
+[ext_resource type="Texture2D" uid="uid://fi14ob4qiu6m" path="res://Assets/oak_woods_v1.0/background/background_layer_1.png" id="1_4aqey"]
+[ext_resource type="Texture2D" uid="uid://b1w8w2la7qthy" path="res://Assets/oak_woods_v1.0/background/background_layer_2.png" id="2_xgxeb"]
+[ext_resource type="Texture2D" uid="uid://c6tladb61l832" path="res://Assets/oak_woods_v1.0/background/background_layer_3.png" id="3_ltlj5"]
+
+[sub_resource type="Gradient" id="Gradient_4aqey"]
+colors = PackedColorArray(0.27107394, 0.31512588, 0.6327726, 1, 0.27548888, 0.3580706, 0.85701376, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xgxeb"]
+gradient = SubResource("Gradient_4aqey")
+
+[sub_resource type="Gradient" id="Gradient_xgxeb"]
+colors = PackedColorArray(0.27058825, 0.23921569, 0.30980393, 1, 0.27058825, 0.23921569, 0.30980393, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ltlj5"]
+gradient = SubResource("Gradient_xgxeb")
+
+[node name="Background" type="Node2D"]
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(320, 180)
+repeat_times = 10
+
+[node name="TextureRect2" type="TextureRect" parent="Parallax2D"]
+offset_top = -182.0
+offset_right = 320.0
+offset_bottom = -2.0
+texture = SubResource("GradientTexture1D_xgxeb")
+
+[node name="TextureRect" type="TextureRect" parent="Parallax2D"]
+offset_top = 180.0
+offset_right = 320.0
+offset_bottom = 360.0
+texture = SubResource("GradientTexture1D_ltlj5")
+
+[node name="Layer1" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.3, 1)
+repeat_size = Vector2(320, 0)
+repeat_times = 10
+
+[node name="TextureRect" type="TextureRect" parent="Layer1"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_4aqey")
+metadata/_edit_use_anchors_ = true
+
+[node name="Layer2" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.5, 1)
+repeat_size = Vector2(320, 0)
+repeat_times = 10
+
+[node name="TextureRect" type="TextureRect" parent="Layer2"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_xgxeb")
+
+[node name="Layer3" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.7, 1)
+repeat_size = Vector2(320, 0)
+repeat_times = 10
+
+[node name="TextureRect" type="TextureRect" parent="Layer3"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_ltlj5")

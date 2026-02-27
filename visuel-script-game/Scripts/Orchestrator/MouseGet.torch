@@ -1,0 +1,122 @@
+[orchestration type="OScript" load_steps=8 format=3 uid="uid://cusbhpmn87d5i"]
+
+[obj type="OScriptFunction" id="OScriptFunction_1nuoh"]
+guid = "92CB6F35-1E23-4615-9DE4-35607AF8AB64"
+method = {
+"name": &"MousePosition",
+"return": {
+"name": &"return_value",
+"type": 5
+}
+}
+user_defined = true
+id = 0
+
+[obj type="OScriptGraph" id="OScriptGraph_vgqql"]
+graph_name = &"EventGraph"
+offset = Vector2(-93.81399536132813, 0)
+zoom = 0.683013379573822
+flags = 8
+
+[obj type="OScriptGraph" id="OScriptGraph_x8gj4"]
+graph_name = &"MousePosition"
+offset = Vector2(-347.1072998046875, -33.057838439941406)
+zoom = 0.8264459371566772
+flags = 22
+nodes = Array[int]([0, 1, 2, 3])
+functions = Array[int]([0])
+
+[obj type="OScriptNodeFunctionEntry" id="OScriptNodeFunctionEntry_kkox3"]
+function_id = "92CB6F35-1E23-4615-9DE4-35607AF8AB64"
+id = 0
+position = Vector2(-420, -40)
+pin_data = Array[Dictionary]([{
+"pin_name": &"ExecOut",
+"dir": 1,
+"flags": 4
+}])
+
+[obj type="OScriptNodeFunctionResult" id="OScriptNodeFunctionResult_s86rx"]
+function_id = "92CB6F35-1E23-4615-9DE4-35607AF8AB64"
+id = 1
+position = Vector2(660, -40)
+pin_data = Array[Dictionary]([{
+"pin_name": &"ExecIn",
+"flags": 4
+}, {
+"pin_name": &"return_value",
+"type": 5,
+"flags": 2,
+"label": "return_value"
+}, {
+"pin_name": &"return_out",
+"type": 5,
+"dir": 1,
+"flags": 34
+}])
+
+[obj type="OScriptNodeCallMemberFunction" id="OScriptNodeCallMemberFunction_nt0ov"]
+function_name = &"get_viewport"
+target_class_name = "Node"
+target_type = 24
+flags = 522
+method = {
+"name": &"get_viewport",
+"return": {
+"type": 24,
+"class_name": &"Viewport"
+},
+"flags": 5
+}
+chain = false
+id = 2
+position = Vector2(-360, 180)
+pin_data = Array[Dictionary]([{
+"pin_name": &"target",
+"type": 24,
+"flags": 2050,
+"label": "Node",
+"target_class": "Node"
+}, {
+"pin_name": &"return_value",
+"type": 24,
+"dir": 1,
+"flags": 2,
+"label": "Viewport",
+"target_class": "Viewport"
+}])
+
+[obj type="OScriptNodeCallMemberFunction" id="OScriptNodeCallMemberFunction_fdtw8"]
+function_name = &"get_mouse_position"
+target_class_name = "Viewport"
+target_type = 24
+flags = 522
+method = {
+"name": &"get_mouse_position",
+"return": {
+"type": 5
+},
+"flags": 5
+}
+chain = false
+id = 3
+position = Vector2(60, 140)
+pin_data = Array[Dictionary]([{
+"pin_name": &"target",
+"type": 24,
+"flags": 2050,
+"label": "Viewport",
+"target_class": "Viewport"
+}, {
+"pin_name": &"return_value",
+"type": 5,
+"dir": 1,
+"flags": 1026
+}])
+
+[resource]
+base_type = &"Node"
+functions = Array[OScriptFunction]([SubResource("OScriptFunction_1nuoh")])
+connections = Array[int]([0, 0, 1, 0, 2, 0, 3, 0, 3, 0, 1, 1])
+nodes = Array[OScriptNode]([SubResource("OScriptNodeFunctionEntry_kkox3"), SubResource("OScriptNodeFunctionResult_s86rx"), SubResource("OScriptNodeCallMemberFunction_nt0ov"), SubResource("OScriptNodeCallMemberFunction_fdtw8")])
+graphs = Array[OScriptGraph]([SubResource("OScriptGraph_vgqql"), SubResource("OScriptGraph_x8gj4")])
