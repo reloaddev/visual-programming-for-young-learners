@@ -123,10 +123,10 @@ animations = [{
 script = ExtResource("1_h784a")
 
 [node name="ShootPoint" type="Marker2D" parent="."]
-position = Vector2(27, 0)
+position = Vector2(10, 0)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.05, 0.05)
+scale = Vector2(0.04, 0.04)
 sprite_frames = SubResource("SpriteFrames_l23rw")
 animation = &"Shoot"
 autoplay = "Idle"

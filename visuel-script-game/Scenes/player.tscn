@@ -1,7 +1,9 @@
-[gd_scene load_steps=34 format=3 uid="uid://bjeswji1qt56"]
+[gd_scene load_steps=36 format=3 uid="uid://bjeswji1qt56"]
 
+[ext_resource type="Script" uid="uid://c6f1op6e3if1i" path="res://Scripts/Orchestrator/player.torch" id="1_6t5aa"]
 [ext_resource type="Texture2D" uid="uid://cv5m42ltjljd3" path="res://Assets/brackeys_platformer_assets/sprites/knight.png" id="1_v0iea"]
-[ext_resource type="Script" uid="uid://c53fhc84alvt" path="res://Scripts/Orchestrator/player.os" id="1_vgqql"]
+[ext_resource type="AudioStream" uid="uid://bdhsebs8ypdet" path="res://Assets/brackeys_platformer_assets/sounds/jump.wav" id="2_fkybt"]
+[ext_resource type="AudioStream" uid="uid://b6l4ybq673esw" path="res://Assets/brackeys_platformer_assets/sounds/hurt.wav" id="3_x3wgy"]
 [ext_resource type="PackedScene" uid="uid://cvn21ejbcwoee" path="res://Scenes/shot_gun.tscn" id="4_fkybt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8erm5"]
@@ -238,8 +240,10 @@ height = 18.0
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 collision_layer = 3
 collision_mask = 3
-script = ExtResource("1_vgqql")
-JumpForce = 250
+script = ExtResource("1_6t5aa")
+JumpSound = ExtResource("2_fkybt")
+MaxSpeed = 300
+deathSound = ExtResource("3_x3wgy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ypfnu")
@@ -254,3 +258,4 @@ shape = SubResource("CapsuleShape2D_xuaoq")
 bus = &"Sound Effects"
 
 [node name="ShotGun" parent="." instance=ExtResource("4_fkybt")]
+position = Vector2(0, 2)
