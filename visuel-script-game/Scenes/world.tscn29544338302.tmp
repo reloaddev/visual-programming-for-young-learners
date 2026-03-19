@@ -34,7 +34,7 @@ grow_vertical = 2
 layout_mode = 0
 offset_left = -309.0
 offset_top = -168.0
-offset_right = -188.0
+offset_right = -243.0
 offset_bottom = -145.0
 script = ExtResource("4_5ukr8")
 
@@ -52,18 +52,7 @@ layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_5ukr8")
 
-[node name="HighScore" type="Label" parent="Player/UI/ScoreContainer/HBoxContainer"]
-layout_mode = 2
-text = "HighScore:"
-label_settings = SubResource("LabelSettings_fo5ed")
-
-[node name="HighScoreValue" type="Label" parent="Player/UI/ScoreContainer/HBoxContainer"]
-layout_mode = 2
-text = "0"
-label_settings = SubResource("LabelSettings_fo5ed")
-
 [node name="Timer" type="Timer" parent="Player/UI/ScoreContainer"]
-wait_time = 2.0
 autostart = true
 
 [node name="GhostPool" parent="." node_paths=PackedStringArray("Player") instance=ExtResource("3_5v1tr")]

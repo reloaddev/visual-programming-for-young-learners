@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "298e42d36b0d0a02",
+    "type": "split",
+    "children": [
+      {
+        "id": "3339d57b10290e0a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4f13190688c69888",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Intoduction.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Intoduction"
+            }
+          },
+          {
+            "id": "6e7fdac5d63b36e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The Player/Movement/Simpel Bevægelse.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Simpel Bevægelse"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "300dbe56cfc4fdb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "87596154d22709cd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3ccf8207ec6822fa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Stifinder"
+            }
+          },
+          {
+            "id": "252d65f010832c00",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "528a240532201fb1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8763d15c7b9eb2b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "320538c2ad410a94",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3ca2caecee6cd9e4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Intoduction.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Intoduction"
+            }
+          },
+          {
+            "id": "aa4c2597944bd9ae",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Intoduction.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Intoduction"
+            }
+          },
+          {
+            "id": "18395ed66ac661e3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "44de06425b6c6f51",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "03ad1395d53a7b87",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Intoduction.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Intoduction"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Åbn hurtig skifter": false,
+      "graph:Åbn grafvisning": false,
+      "canvas:Opret nyt lærred": false,
+      "daily-notes:Åbn dagens note": false,
+      "templates:Indsæt skabelon": false,
+      "command-palette:Åbn fastgjorte kommandoer": false,
+      "bases:Opret ny base": false
+    }
+  },
+  "active": "4f13190688c69888",
+  "lastOpenFiles": [
+    "Spøgelse/Movement/Bevægelse.md",
+    "The Player/Movement/Simpel Bevægelse.md",
+    "General Scripting Concepts/Patterns/Object Pool.md",
+    "General Scripting Concepts/Patterns/Finite State Machine.md",
+    "General Scripting Concepts/Patterns/Command.md",
+    "General Scripting Concepts/Patterns/Component.md",
+    "Generel Godot/Scene Tree.md",
+    "Generel Godot/Nodes.md",
+    "Intoduction.md",
+    "Billeder/ShotGun Scene Tree.png",
+    "General Scripting Concepts/Functions/Why function.md",
+    "General Scripting Concepts/Inheritance/Abstract.md",
+    "Billeder/GhostPool Scene Tree.png",
+    "Billeder/Bullet Scene Tree.png",
+    "Billeder/Bullet.png",
+    "Billeder/Ghost.png",
+    "Billeder/Ghost Scene Tree.png",
+    "Billeder/ShotGun.png",
+    "Billeder/Player.png",
+    "Billeder/Player Scene Tree.png",
+    "Billeder/Main Scene Tree.png",
+    "Billeder",
+    "2026-03-01.md",
+    "Generel Godot",
+    "General Scripting Concepts/Patterns",
+    "General Scripting Concepts/Inheritance",
+    "General Scripting Concepts/Functions",
+    "General Scripting Concepts",
+    "Spøgelse/Movement",
+    "The Player/Gun",
+    "The Player/Movement",
+    "Spøgelse"
+  ]
+}

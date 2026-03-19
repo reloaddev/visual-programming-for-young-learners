@@ -1,0 +1,207 @@
+[gd_scene load_steps=23 format=3 uid="uid://4477t52e8tux"]
+
+[ext_resource type="PackedScene" uid="uid://dtrtc6qtcydxb" path="res://Scenes/background.tscn" id="1_b6ftn"]
+[ext_resource type="Texture2D" uid="uid://dynt7ublk0os2" path="res://Assets/Ground.png" id="2_3cm6q"]
+[ext_resource type="Texture2D" uid="uid://cv5m42ltjljd3" path="res://Assets/brackeys_platformer_assets/sprites/knight.png" id="3_3cm6q"]
+[ext_resource type="Script" uid="uid://bgehh1hftq0ym" path="res://Scripts/StartMenuUI.gd" id="4_4nugt"]
+[ext_resource type="AudioStream" uid="uid://d2xtsb1v4873f" path="res://Assets/brackeys_platformer_assets/music/time_for_adventure.mp3" id="5_wpeey"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nugt"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpeey"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d3ks1"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ov2a8"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lykw3"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dmqvv"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(160, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8ebk"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(192, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qstho"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(224, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vnwfp"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fs4yx"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5let"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s7spk"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_prab7"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(128, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lmdbs"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(160, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqw3k"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(192, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ed6k0"]
+atlas = ExtResource("3_3cm6q")
+region = Rect2(224, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4objr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4nugt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wpeey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d3ks1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ov2a8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lykw3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dmqvv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8ebk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qstho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vnwfp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fs4yx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5let")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s7spk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_prab7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lmdbs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mqw3k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ed6k0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="TitleScene" type="Node2D"]
+
+[node name="Background2" type="Node2D" parent="."]
+position = Vector2(0, 66)
+
+[node name="Background" parent="Background2" instance=ExtResource("1_b6ftn")]
+
+[node name="BackTree" parent="Background2/Background" index="1"]
+autoscroll = Vector2(-90, 0)
+
+[node name="MiddleTree" parent="Background2/Background" index="2"]
+autoscroll = Vector2(-105, 0)
+
+[node name="FrontTree" parent="Background2/Background" index="3"]
+autoscroll = Vector2(-115, 0)
+
+[node name="Fog" parent="Background2/Background" index="4"]
+autoscroll = Vector2(-122, 0)
+
+[node name="Parallax2D" type="Parallax2D" parent="Background2"]
+scroll_offset = Vector2(0, 170)
+repeat_size = Vector2(330, 0)
+autoscroll = Vector2(-125, 0)
+repeat_times = 10
+
+[node name="TextureRect" type="TextureRect" parent="Background2/Parallax2D"]
+offset_right = 330.0
+offset_bottom = 128.0
+texture = ExtResource("2_3cm6q")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Player" type="Node2D" parent="."]
+position = Vector2(213, 225)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+sprite_frames = SubResource("SpriteFrames_4objr")
+autoplay = "default"
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_4nugt")
+
+[node name="PanelContainer" type="PanelContainer" parent="UI"]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 128.0
+offset_right = 394.0
+offset_bottom = 221.0
+
+[node name="HBoxContainer" type="VBoxContainer" parent="UI/PanelContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/PanelContainer/HBoxContainer"]
+layout_mode = 2
+text = "Ghost ShotBuster"
+
+[node name="Start" type="Button" parent="UI/PanelContainer/HBoxContainer"]
+layout_mode = 2
+text = "Start"
+
+[node name="Exit" type="Button" parent="UI/PanelContainer/HBoxContainer"]
+layout_mode = 2
+text = "Close"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_wpeey")
+autoplay = true
+bus = &"BackgroundMusic"
+
+[connection signal="pressed" from="UI/PanelContainer/HBoxContainer/Start" to="UI" method="_on_start_pressed"]
+[connection signal="pressed" from="UI/PanelContainer/HBoxContainer/Exit" to="UI" method="_on_exit_pressed"]
+
+[editable path="Background2/Background"]

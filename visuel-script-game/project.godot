@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="VisuelScriptGame"
-run/main_scene="uid://bekl3vqn6f76m"
+run/main_scene="uid://4477t52e8tux"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -26,6 +26,7 @@ window/size/viewport_height=360
 window/size/window_width_override=1920
 window/size/window_height_override=1080
 window/stretch/mode="viewport"
+window/stretch/scale=1.78
 window/stretch/scale_mode="integer"
 mouse_cursor/custom_image="uid://caeya27m6aa8n"
 mouse_cursor/custom_image_hotspot=Vector2(12, 12)

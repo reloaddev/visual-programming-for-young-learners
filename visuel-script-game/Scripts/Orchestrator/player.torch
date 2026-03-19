@@ -2934,8 +2934,7 @@ pin_data = Array[Dictionary]([{
 "type": 24,
 "dir": 1,
 "flags": 2050,
-"target_class": "AnimatedSprite2D",
-"dv": null
+"target_class": "AnimatedSprite2D"
 }])
 
 [obj type="OScriptNodeVariableSet" id="OScriptNodeVariableSet_axeuq"]
@@ -2993,7 +2992,6 @@ pin_data = Array[Dictionary]([{
 "type": 24,
 "flags": 2050,
 "target_class": "AnimatedSprite2D",
-"dv": null,
 "hint": 34,
 "hint_string": "AnimatedSprite2D",
 "usage": 4102
@@ -3061,8 +3059,7 @@ position = Vector2(660, 320)
 pin_data = Array[Dictionary]([{
 "pin_name": &"a",
 "type": 3,
-"flags": 2,
-"dv": 0.0
+"flags": 2
 }, {
 "pin_name": &"b",
 "type": 2,
@@ -3071,8 +3068,7 @@ pin_data = Array[Dictionary]([{
 "pin_name": &"result",
 "type": 1,
 "dir": 1,
-"flags": 2,
-"dv": false
+"flags": 2
 }])
 
 [obj type="OScriptVariable" id="OScriptVariable_olqyp"]
