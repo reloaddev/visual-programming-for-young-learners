@@ -1,7 +1,7 @@
 [orchestration type="OScript" load_steps=129 format=3 uid="uid://dlhw1yxshvq73"]
 
-[ext_resource type="AudioStreamWAV" uid="uid://bdf8kmkfixg6c" path="res://Assets/Sounds/762x54r Single Isolated WAV.wav" id="1_thbej"
-][ext_resource type="AudioStreamWAV" uid="uid://ckid6ac1jn8d3" path="res://Assets/Sounds/Single Shot Reload Full WAV.wav" id="2_uta0k"
+[ext_resource type="AudioStreamWAV" uid="uid://bdf8kmkfixg6c" path="res://Assets/Sounds/762x54r Single Isolated WAV.wav" id="1_k7acu"
+][ext_resource type="AudioStreamWAV" uid="uid://ckid6ac1jn8d3" path="res://Assets/Sounds/Single Shot Reload Full WAV.wav" id="2_5v1tr"
 ]
 [obj type="OScriptFunction" id="OScriptFunction_x3wgy"]
 guid = "693CDD3A-BF57-434A-9383-7ADC75CA8EF5"
@@ -2609,7 +2609,7 @@ category = "Default"
 exported = true
 classification = "class:AudioStream"
 type = 24
-default_value = ExtResource("1_thbej")
+default_value = ExtResource("1_k7acu")
 
 [obj type="OScriptVariable" id="OScriptVariable_1hodl"]
 name = "ReloadSound"
@@ -2617,7 +2617,7 @@ category = "Default"
 exported = true
 classification = "class:AudioStream"
 type = 24
-default_value = ExtResource("2_uta0k")
+default_value = ExtResource("2_5v1tr")
 
 [obj type="OScriptVariable" id="OScriptVariable_0ceo7"]
 name = "KickBackForce"
