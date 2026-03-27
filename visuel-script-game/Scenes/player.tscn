@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://bjeswji1qt56"]
+[gd_scene load_steps=45 format=3 uid="uid://bjeswji1qt56"]
 
 [ext_resource type="Script" uid="uid://c6f1op6e3if1i" path="res://Scripts/Orchestrator/player.torch" id="1_6t5aa"]
 [ext_resource type="Texture2D" uid="uid://cv5m42ltjljd3" path="res://Assets/brackeys_platformer_assets/sprites/knight.png" id="1_v0iea"]
@@ -54,6 +54,38 @@ region = Rect2(96, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_ypfnu"]
 atlas = ExtResource("1_v0iea")
 region = Rect2(64, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xuaoq"]
+atlas = ExtResource("1_v0iea")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wohnl"]
+atlas = ExtResource("1_v0iea")
+region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36dho"]
+atlas = ExtResource("1_v0iea")
+region = Rect2(64, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yh6i2"]
+atlas = ExtResource("1_v0iea")
+region = Rect2(96, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nv4vc"]
+atlas = ExtResource("1_v0iea")
+region = Rect2(128, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gxox"]
+atlas = ExtResource("1_v0iea")
+region = Rect2(160, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11gg7"]
+atlas = ExtResource("1_v0iea")
+region = Rect2(192, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qpa8y"]
+atlas = ExtResource("1_v0iea")
+region = Rect2(224, 160, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7dp3o"]
 atlas = ExtResource("1_v0iea")
@@ -182,6 +214,35 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_xuaoq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wohnl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36dho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yh6i2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nv4vc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gxox")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11gg7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qpa8y")
+}],
+"loop": true,
+"name": &"Roll",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_7dp3o")
 }, {
 "duration": 1.0,
@@ -242,15 +303,16 @@ height = 18.0
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_6t5aa")
-JumpForce = 250
+JumpForce = 270
 JumpSound = ExtResource("2_fkybt")
 MaxSpeed = 300
 deathSound = ExtResource("3_x3wgy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ypfnu")
-animation = &"Idle"
+animation = &"Roll"
 autoplay = "Idle"
+frame_progress = 0.4002396
 offset = Vector2(0, -4)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -260,7 +322,7 @@ shape = SubResource("CapsuleShape2D_xuaoq")
 bus = &"Sound Effects"
 
 [node name="ShotGun" parent="." instance=ExtResource("4_fkybt")]
-position = Vector2(0, 2)
+position = Vector2(0, 3)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 process_callback = 0
