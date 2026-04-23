@@ -1,0 +1,49 @@
+[orchestration type="OScript" script_class="Pool" load_steps=7 format=3 uid="uid://be88uvtwnemvt"]
+
+[obj type="OScriptGraph" id="OScriptGraph_3eag8"]
+graph_name = &"EventGraph"
+offset = Vector2(147.5987548828125, 391.7642822265625)
+zoom = 0.971494436264038
+flags = 8
+
+[obj type="OScriptVariable" id="OScriptVariable_1dnh2"]
+name = "Active"
+category = "Default"
+classification = "type:Array"
+type = 28
+default_value = []
+
+[obj type="OScriptVariable" id="OScriptVariable_ikia7"]
+name = "Player"
+category = "Default"
+exported = true
+classification = "class:CharacterBody2D"
+type = 24
+
+[obj type="OScriptVariable" id="OScriptVariable_t2t4p"]
+name = "Ghost"
+category = "Default"
+constant = true
+classification = "type:String"
+type = 4
+default_value = ""
+
+[obj type="OScriptVariable" id="OScriptVariable_0pcbe"]
+name = "Position"
+category = "Default"
+classification = "type:Vector2"
+type = 5
+default_value = Vector2(0, 0)
+
+[obj type="OScriptVariable" id="OScriptVariable_oduel"]
+name = "InActive"
+category = "Default"
+classification = "type:Array"
+type = 28
+default_value = []
+
+[resource]
+base_type = &"Node2D"
+class_name = &"Pool"
+variables = Array[OScriptVariable]([SubResource("OScriptVariable_1dnh2"), SubResource("OScriptVariable_ikia7"), SubResource("OScriptVariable_t2t4p"), SubResource("OScriptVariable_0pcbe"), SubResource("OScriptVariable_oduel")])
+graphs = Array[OScriptGraph]([SubResource("OScriptGraph_3eag8")])

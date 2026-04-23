@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://didi5hkvjywg5"]
+
+[ext_resource type="Script" uid="uid://nscdynx44bs6" path="res://Scripts/Orchestrator/Score/Score.torch" id="1_hrvwa"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fo5ed"]
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_5ukr8"]
+font_size = 10
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScoreContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = -309.0
+offset_top = -168.0
+offset_right = -188.0
+offset_bottom = -145.0
+script = ExtResource("1_hrvwa")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScoreContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Score" type="Label" parent="ScoreContainer/HBoxContainer"]
+layout_mode = 2
+text = "Score: "
+label_settings = SubResource("LabelSettings_fo5ed")
+
+[node name="Value" type="Label" parent="ScoreContainer/HBoxContainer"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_5ukr8")
+
+[node name="HighScore" type="Label" parent="ScoreContainer/HBoxContainer"]
+layout_mode = 2
+text = "HighScore:"
+label_settings = SubResource("LabelSettings_fo5ed")
+
+[node name="HighScoreValue" type="Label" parent="ScoreContainer/HBoxContainer"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_fo5ed")
+
+[node name="Timer" type="Timer" parent="ScoreContainer"]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="ScoreContainer/Timer" to="ScoreContainer" method="_on_timer_timeout"]

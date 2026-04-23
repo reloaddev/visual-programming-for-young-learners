@@ -1,0 +1,12 @@
+[orchestration type="OScript" script_class="Bullet" load_steps=2 format=3 uid="uid://bfs52j1mkyo5l"]
+
+[obj type="OScriptGraph" id="OScriptGraph_h784a"]
+graph_name = &"EventGraph"
+offset = Vector2(-138, 80.46380615234375)
+zoom = 0.6607125401496887
+flags = 8
+
+[resource]
+base_type = &"Area2D"
+class_name = &"Bullet"
+graphs = Array[OScriptGraph]([SubResource("OScriptGraph_h784a")])

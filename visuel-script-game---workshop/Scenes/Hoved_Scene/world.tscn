@@ -1,0 +1,35 @@
+[gd_scene load_steps=8 format=3 uid="uid://bekl3vqn6f76m"]
+
+[ext_resource type="PackedScene" uid="uid://dtrtc6qtcydxb" path="res://Scenes/Verden/background.tscn" id="1_c0qiu"]
+[ext_resource type="PackedScene" uid="uid://cga62qgqiro01" path="res://Scenes/Verden/foreground.tscn" id="2_twmkh"]
+[ext_resource type="PackedScene" uid="uid://bjeswji1qt56" path="res://Scenes/Spiller/player.tscn" id="3_qkmli"]
+[ext_resource type="PackedScene" uid="uid://didi5hkvjywg5" path="res://Scenes/Score/ui.tscn" id="4_bess5"]
+[ext_resource type="PackedScene" uid="uid://2dubrctb5t04" path="res://Scenes/SpøgelseSpawner/ghost_pool.tscn" id="5_flg6u"]
+[ext_resource type="AudioStream" uid="uid://d2xtsb1v4873f" path="res://Assets/brackeys_platformer_assets/music/time_for_adventure.mp3" id="6_rhsx8"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_5ukr8"]
+vertices = PackedVector2Array(1902.0391, 520.0469, -1583.0625, 538.9375, -1590.9297, -704.02344, 1907.9531, -713.96875)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-1593, 549, 1912, 530, 1918, -724, -1601, -714)])
+
+[node name="World" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_c0qiu")]
+
+[node name="Foreground" parent="." instance=ExtResource("2_twmkh")]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_5ukr8")
+
+[node name="Player" parent="." instance=ExtResource("3_qkmli")]
+position = Vector2(24, 140)
+
+[node name="UI" parent="Player" instance=ExtResource("4_bess5")]
+
+[node name="GhostPool" parent="." node_paths=PackedStringArray("Player") instance=ExtResource("5_flg6u")]
+Player = NodePath("../Player")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_rhsx8")
+autoplay = true
+bus = &"BackgroundMusic"

@@ -1,0 +1,77 @@
+[gd_scene load_steps=9 format=3 uid="uid://bekl3vqn6f76m"]
+
+[ext_resource type="PackedScene" uid="uid://dtrtc6qtcydxb" path="res://Scenes/background.tscn" id="1_go701"]
+[ext_resource type="PackedScene" uid="uid://cga62qgqiro01" path="res://Scenes/foreground.tscn" id="2_5a7ea"]
+[ext_resource type="PackedScene" uid="uid://bjeswji1qt56" path="res://Scenes/player.tscn" id="3_5a7ea"]
+[ext_resource type="PackedScene" uid="uid://2dubrctb5t04" path="res://Scenes/ghost_pool.tscn" id="3_5v1tr"]
+[ext_resource type="Script" uid="uid://dkqix0ndiocwy" path="res://Scripts/score_container.gd" id="4_5ukr8"]
+[ext_resource type="AudioStream" uid="uid://d2xtsb1v4873f" path="res://Assets/brackeys_platformer_assets/music/time_for_adventure.mp3" id="7_o06y3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fo5ed"]
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_5ukr8"]
+font_size = 10
+
+[node name="World" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_go701")]
+
+[node name="Foreground" parent="." instance=ExtResource("2_5a7ea")]
+
+[node name="Player" parent="." instance=ExtResource("3_5a7ea")]
+position = Vector2(24, 140)
+
+[node name="UI" type="Control" parent="Player"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScoreContainer" type="PanelContainer" parent="Player/UI"]
+layout_mode = 0
+offset_left = -309.0
+offset_top = -168.0
+offset_right = -188.0
+offset_bottom = -145.0
+script = ExtResource("4_5ukr8")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Player/UI/ScoreContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Score" type="Label" parent="Player/UI/ScoreContainer/HBoxContainer"]
+layout_mode = 2
+text = "Score: "
+label_settings = SubResource("LabelSettings_fo5ed")
+
+[node name="Value" type="Label" parent="Player/UI/ScoreContainer/HBoxContainer"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_5ukr8")
+
+[node name="HighScore" type="Label" parent="Player/UI/ScoreContainer/HBoxContainer"]
+layout_mode = 2
+text = "HighScore:"
+label_settings = SubResource("LabelSettings_fo5ed")
+
+[node name="HighScoreValue" type="Label" parent="Player/UI/ScoreContainer/HBoxContainer"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_fo5ed")
+
+[node name="Timer" type="Timer" parent="Player/UI/ScoreContainer"]
+wait_time = 2.0
+autostart = true
+
+[node name="GhostPool" parent="." node_paths=PackedStringArray("Player") instance=ExtResource("3_5v1tr")]
+Player = NodePath("../Player")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_o06y3")
+autoplay = true
+bus = &"BackgroundMusic"
+
+[connection signal="timeout" from="Player/UI/ScoreContainer/Timer" to="Player/UI/ScoreContainer" method="_on_timer_timeout"]

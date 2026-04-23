@@ -1,7 +1,7 @@
 
 Bevægelsen for spøgelset er relativt enkel takket være Godots indbyggede funktioner for **CharacterBody2D**. Her er de trin, der beskriver, hvordan bevægelsen fungerer:
 
-1. **Initialisering af Variabler**  
+1.**Initialisering af Variabler**  
    For at spøgelset kan bevæge sig, skal vi først definere en reference til spilleren som en variabel, f.eks. **player**. Dette vil gøre det muligt for spøgelset at vide, hvor spilleren befinder sig i scenen.
 
 2. **Beregning af Retning**  
