@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cga62qgqiro01" path="res://Scenes/Verden/foreground.tscn" id="2_twmkh"]
 [ext_resource type="PackedScene" uid="uid://bjeswji1qt56" path="res://Scenes/Spiller/player.tscn" id="3_qkmli"]
 [ext_resource type="PackedScene" uid="uid://didi5hkvjywg5" path="res://Scenes/Score/ui.tscn" id="4_bess5"]
-[ext_resource type="PackedScene" uid="uid://2dubrctb5t04" path="res://Scenes/SpøgelseSpawner/ghost_pool.tscn" id="5_flg6u"]
+[ext_resource type="PackedScene" uid="uid://2dubrctb5t04" path="res://Scenes/SpøgelseSpawner/spøgelse_spawner.tscn" id="5_flg6u"]
 [ext_resource type="AudioStream" uid="uid://d2xtsb1v4873f" path="res://Assets/brackeys_platformer_assets/music/time_for_adventure.mp3" id="6_rhsx8"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_5ukr8"]
