@@ -26,8 +26,7 @@ position = Vector2(24, 140)
 
 [node name="UI" parent="Player" instance=ExtResource("4_bess5")]
 
-[node name="GhostPool" parent="." node_paths=PackedStringArray("Player") instance=ExtResource("5_flg6u")]
-Player = NodePath("../Player")
+[node name="GhostPool" parent="." instance=ExtResource("5_flg6u")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_rhsx8")
