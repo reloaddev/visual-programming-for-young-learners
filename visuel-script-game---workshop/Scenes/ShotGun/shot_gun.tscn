@@ -33,7 +33,7 @@ animations = [{
 "texture": ExtResource("2_po1ay")
 }],
 "loop": false,
-"name": &"Idle",
+"name": &"Ready",
 "speed": 5.0
 }, {
 "frames": [{
@@ -128,8 +128,8 @@ position = Vector2(10, 0)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.04, 0.04)
 sprite_frames = SubResource("SpriteFrames_l23rw")
-animation = &"Idle"
-autoplay = "Idle"
+animation = &"Ready"
+autoplay = "Ready"
 offset = Vector2(360, -63)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
