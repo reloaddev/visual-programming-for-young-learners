@@ -17,35 +17,80 @@ Because programming serves as the entry point to software engineering, the choic
 The specific language to use for this entry point has been a history of debate\cite{villagomez-palacios_bridging_2025}, as language preference is subject to personal preference and efficiency varies between learners.
 George Milbrandt\cite{mannila_objective_2006} suggested these criteria for language selection for beginners: it should be easy to use, have a structured design with one-entry/one-exit flow, offer powerful computing capacity while maintaining simple syntax, support variable declaration and expressive, meaningful variable names, provide easy input/output and output formatting, give immediate feedback, and include good diagnostic tools for testing and debugging.
 Although these are good criteria for a language to have its leaves very little tooling for comparing different languages and their capacity to teach.
-This is something that Mannila and Raadt have sought to rectify in their paper \textit{ "An Objective Comparison of Languages for  Teaching Introductory Programming"}\cite{mannila_objective_2006}, wherein they compare different programming language to find the one which is the best for teaching beginners.
+This is something that Mannila and Raadt have sought to rectify in their paper \textit{ "An Objective Comparison of Languages for Teaching Introductory Programming"}\cite{mannila_objective_2006}, wherein they compare different programming language to find the one which is the best for teaching beginners.
 They have collected 17 different criteria drawn from the design decisions made by creators of languages that are considered ``teaching languages''.
-
-
-
 
 \subsubsection{Challenges in Learning Software Engineering}
 
-
 \subsubsection{Computational Thinking and Conceptual Learning}
-
 
 \subsubsection{Game-Based Learning}
 
-
 \subsection{Visual Programming Languages}
-Visual Programming Languages (VPL) differ from Textual Programming Languages (TPL) in, that instead of using a textual representation consisting of keywords and strings they make use of visual representations to assemble a program. Using visual representations is generally seen as a way to make programming more accessible to a broader audience, as learners are not required to learn syntax and semantics of a textual language first. Visual programming languages are often designed in a way that only certain language constructs can be integrated, thus preventing faulty use of the language early. On the other hand, textual programming languages allow users to write basically anything. Syntax errors might be first caught at compilation time, or even worse at runtime, which makes tracing errors a hard task.
+Visual Programming Languages (VPL) differ from Textual Programming Languages (TPL) in, that instead of using a textual representation consisting of keywords and strings they make use of visual representations to assemble a program.
+Using visual representations is generally seen as a way to make programming more accessible to a broader audience, as learners are not required to learn syntax and semantics of a textual language first.
+Visual programming languages are often designed in a way that only certain language constructs can be integrated, thus preventing faulty use of the language early.
+On the other hand, textual programming languages allow users to write basically anything.
+Syntax errors might be first caught at compilation time, or even worse at runtime, which makes tracing errors a hard task.
 
-One of the first steps towards visual programming languages was Logo, which was developed as a programming language for children [Papert]. The general idea of the language is to put children into a position, where it is not just being taught how to use a language, but where it can itself explore the world of programming. For instance, it might help children to understand that programming is not really about getting it right or wrong the first time, but to iteratively improve a program over time by running and debugging it. Logo makes use of turtle graphics to make it appealing to children. One of the initial tasks is to write a program that moves a turtle on the screen. Children can reflect on their thinking process by imagining the steps they would take if they were the turtle, and thus understand how a computer program comprises of different steps or instructions. Logo is considered one of the first attempts to make programming accessible to children. Still, it is not a visual, but a textual programming language.
+One of the first steps towards visual programming languages was Logo, which was developed as a programming language for children [Papert].
+The general idea of the language is to put children into a position, where it is not just being taught how to use a language, but where it can itself explore the world of programming.
+For instance, it might help children to understand that programming is not really about getting it right or wrong the first time, but to iteratively improve a program over time by running and debugging it.
+Logo makes use of turtle graphics to make it appealing to children.
+One of the initial tasks is to write a program that moves a turtle on the screen.
+Children can reflect on their thinking process by imagining the steps they would take if they were the turtle, and thus understand how a computer program comprises of different steps or instructions.
+Logo is considered one of the first attempts to make programming accessible to children.
+Still, it is not a visual, but a textual programming language.
 
-<CHECK Pausch, 1995, Alice: Rapid Prototyping System for Virtual Reality>Alice, introduced in the year 2000, is another textual programming language leading up to the creation of “pure” visual programming languages. The language can be used to program a 3D animation environment [Cooper]. Similar to Logo being built for children, Alice targets students by serving as an introduction to programming. It tries to address the problem, that some students are better prepared than others when entering their first programming course, e.g., in university. Therefore, its authors see it as an attempt to prepare students for learning programming concepts. While strictly being a textual programming language, Alice provides students with immediate visual feedback when executing code. For instance, changing the coordinates of an object within the code will be near to instantly reflected in the animation environment. Students can debug their programs based on visual output. With 3D animation being a rather complex environment for programming novices, Alice provides a lot of built-in methods to manipulate objects and physics. Still, it teaches concepts of graphics, state and event handling.
+<CHECK Pausch, 1995, Alice: Rapid Prototyping System for Virtual Reality>Alice, introduced in the year 2000, is another textual programming language leading up to the creation of “pure” visual programming languages.
+The language can be used to program a 3D animation environment [Cooper].
+Similar to Logo being built for children, Alice targets students by serving as an introduction to programming.
+It tries to address the problem, that some students are better prepared than others when entering their first programming course, e.g., in university.
+Therefore, its authors see it as an attempt to prepare students for learning programming concepts.
+While strictly being a textual programming language, Alice provides students with immediate visual feedback when executing code.
+For instance, changing the coordinates of an object within the code will be near to instantly reflected in the animation environment.
+Students can debug their programs based on visual output.
+With 3D animation being a rather complex environment for programming novices, Alice provides a lot of built-in methods to manipulate objects and physics.
+Still, it teaches concepts of graphics, state and event handling.
 
-In 2007, Resnick et al. launched their visual programming language Scratch [Resnick]. Compared to the two previously presented languages, Scratch does not rely on textual code snippets, but  graphical programming blocks. Each block serves a purpose, e.g., hold a variable or check for a condition, and can be combined with other compatible blocks. This allows learners to try out many things, while being protected from syntax errors common in textual programming. Scratch is highly interactive, thus promoting learners to explore solutions and iteratively create their programs. Further, the programming environment allows for a high degree of personalization to motivate learners. Scratch projects can be shared with others, thus allowing new projects to re-use code from existing projects. The concept of re-use plays an important role in other programming languages too, where projects rely on libraries or frameworks to avoid having to program every functionality from scratch.
+In 2007, Resnick et al.
+launched their visual programming language Scratch [Resnick].
+Compared to the two previously presented languages, Scratch does not rely on textual code snippets, but graphical programming blocks.
+Each block serves a purpose, e.g., hold a variable or check for a condition, and can be combined with other compatible blocks.
+This allows learners to try out many things, while being protected from syntax errors common in textual programming.
+Scratch is highly interactive, thus promoting learners to explore solutions and iteratively create their programs.
+Further, the programming environment allows for a high degree of personalization to motivate learners.
+Scratch projects can be shared with others, thus allowing new projects to re-use code from existing projects.
+The concept of re-use plays an important role in other programming languages too, where projects rely on libraries or frameworks to avoid having to program every functionality from scratch.
 
-While Scratch being pointed at children education, Snap! attempts to recycle Scratch’s core ideas and make it viable for non-major computer science education [Harvey & Mönig]. It was initially developed as an extension to Scratch, which introduced functions to make use of recursion and the possibility to create lists of lists, enabling the construction of other data structures. In addition, Snap! can serve object-oriented programming allowing for the creation of class-like constructs and their instantiation as objects. Even inheritance becomes possible with Snap!. The creators of Snap! wanted avoid having separate languages for children and more mature learners, as this would split the community into two parts, where learners had to switch from to another language. Instead, they advocate for an approach where switching from Scratch to Snap! feel more like enabling some additional features to make the language more powerful.
+While Scratch being pointed at children education, Snap!
+attempts to recycle Scratch’s core ideas and make it viable for non-major computer science education [Harvey & Mönig].
+It was initially developed as an extension to Scratch, which introduced functions to make use of recursion and the possibility to create lists of lists, enabling the construction of other data structures.
+In addition, Snap!
+can serve object-oriented programming allowing for the creation of class-like constructs and their instantiation as objects.
+Even inheritance becomes possible with Snap!
+The creators of Snap!
+wanted avoid having separate languages for children and more mature learners, as this would split the community into two parts, where learners had to switch from to another language.
+Instead, they advocate for an approach where switching from Scratch to Snap!
+feel more like enabling some additional features to make the language more powerful.
 
-The Greenfoot programming environment is another visual programming language, using and teaching Java [Kölling]. The language can be used to create animations, and is intended to help students understand object-oriented programming. While it requires knowledge of Java to some degree, Greenfoot dramatically simplifies interaction with the language, by hiding boilerplate code and by allowing to create objects through a visual editor. The animation-related functionality is provided by Greenfoot, allowing students to focus on what they want to create instead of how to create it. Moreover, the Greenfoot editor always displays a hierarchy of classes that are part of the current scene, which helps to understand “the bigger picture”. Created behavior can be immediately tested in the graphical output window, where leaners can inspect objects. They can view their methods and execute them individually. Similar help exists for investigating object state, i.e. seeing the values of internal variables like in a debugger. In general, Greenfoot tries to ease the introduction to complex concepts like inheritance or information hiding by letting learners experience concrete examples first before giving a more abstract definition, while sparing them from having to learn complex syntax from the beginning.
+The Greenfoot programming environment is another visual programming language, using and teaching Java [Kölling].
+The language can be used to create animations, and is intended to help students understand object-oriented programming.
+While it requires knowledge of Java to some degree, Greenfoot dramatically simplifies interaction with the language, by hiding boilerplate code and by allowing to create objects through a visual editor.
+The animation-related functionality is provided by Greenfoot, allowing students to focus on what they want to create instead of how to create it.
+Moreover, the Greenfoot editor always displays a hierarchy of classes that are part of the current scene, which helps to understand “the bigger picture”.
+Created behavior can be immediately tested in the graphical output window, where leaners can inspect objects.
+They can view their methods and execute them individually.
+Similar help exists for investigating object state, i.e. seeing the values of internal variables like in a debugger.
+In general, Greenfoot tries to ease the introduction to complex concepts like inheritance or information hiding by letting learners experience concrete examples first before giving a more abstract definition, while sparing them from having to learn complex syntax from the beginning.
 
-While other visual programming languages attempt to teach computational thinking through animation or game development, MIT App Inventor utilizes mobile app development as a teaching medium [Patton]. Prebuilt visual elements (e.g. buttons, text elements) can be dragged into an an app, making it easy to the implement the app interface. Further, code blocks as in Scratch or Snap! can be used to implement more complex behavior. Similar to other VPLs, App Inventor’s target group is users that have not graduated from a computer science program. The focus lies on iteration and rapid prototyping. Also, App Inventor provides a WYSIWYG (What You See is What You Get) output window, which shows users how changing code affects the output app. A companion app, that users can install on their mobile phone, allows users to test their app on real devices.
-
+While other visual programming languages attempt to teach computational thinking through animation or game development, MIT App Inventor utilizes mobile app development as a teaching medium [Patton].
+Prebuilt visual elements (e.g. buttons, text elements) can be dragged into an an app, making it easy to the implement the app interface.
+Further, code blocks as in Scratch or Snap!
+can be used to implement more complex behavior.
+Similar to other VPLs, App Inventor’s target group is users that have not graduated from a computer science program.
+The focus lies on iteration and rapid prototyping.
+Also, App Inventor provides a WYSIWYG (What You See is What You Get) output window, which shows users how changing code affects the output app.
+A companion app, that users can install on their mobile phone, allows users to test their app on real devices.
 
 \subsection{Visual Programming Languages in Education}
