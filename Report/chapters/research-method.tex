@@ -7,10 +7,10 @@ Both languages are incorporated into game engines by the developers, meaning tha
 Students in each group were asked to build a game using the language, which incorporated the following Software development concepts:
 
 \begin{itemize}
-    \item Instantiation
-    \item Modularity
-    \item State Management
-    \item Event Handling
+	\item Instantiation
+	\item Modularity
+	\item State Management
+	\item Event Handling
 \end{itemize}
 
 These concepts were chosen as they serve as ways to introduce topics commonly taught during the first year of Software engineering at university, whilst also being commonplace in game development.
@@ -50,31 +50,31 @@ The knowledge gaps below covers understanding of concepts that was necessary to 
 In the case of Godot, explaining datatypes, vectors, if-statements, wnd how to understand a simple algorithm was required before teaching.
 
 \begin{table}[h]
-    \centering
-    \begin{tabular}{|p{7cm}|p{7cm}|}
-        \hline
-        \textbf{Godot}                                                                                                                                                                           & \textbf{Scratch}                                                                                                                                                                         \\
-        \hline
-        Requires knowledge of simple datatypes (\texttt{int}, \texttt{float}, \texttt{string}).                                                                                                  & Has blocks for the programmer to input knowledge and texts.
-        Explicit knowledge of variables were not required.                                                                           \\
-        \hline
-        Requires knowledge of vectors.
-                                                                                                                                                                  & Asks the user to input coordinates.
-        Explicit knowledge of vectors is not required.                                                                                                       \\
-        \hline
-        Requires the use of complex datatypes specific to the engine, i.e.\ \texttt{charactercontroller}, \texttt{Node2D}, etc.
-                                                                         & Does not natively support complex datatypes.                                                                                                                                             \\
-        \hline
-        Requires usage of if-statements in the form of branches.
-                                                                                                                                        & Requires usage of if-statements in the form of blocks.                                                                                                                                   \\
-        \hline
-        Basic understanding of what an algorithm is, and how to explain the flow of your code is required to understand how the code you are writing works.
-        (Computational/algorithmic thinking) & Basic understanding of what an algorithm is, and how to explain the flow of your code is required to understand how the code you are writing works.
-        (Computational/algorithmic thinking) \\
-        \hline
-    \end{tabular}
-    \caption{Comparison of Godot and Scratch}
-    \label{tab:godot-scratch}
+	\centering
+	\begin{tabular}{|p{7cm}|p{7cm}|}
+		\hline
+		\textbf{Godot}                                                                          & \textbf{Scratch}                                                                                                                                    \\
+		\hline
+		Requires knowledge of simple datatypes (\texttt{int}, \texttt{float}, \texttt{string}). & Has blocks for the programmer to input knowledge and texts.
+		Explicit knowledge of variables were not required.                                                                                                                                                                                            \\
+		\hline
+		Requires knowledge of vectors.
+		                                                                                        & Asks the user to input coordinates.
+		Explicit knowledge of vectors is not required.                                                                                                                                                                                                \\
+		\hline
+		Requires the use of complex datatypes specific to the engine, i.e.\ \texttt{charactercontroller}, \texttt{Node2D}, etc.
+		                                                                                        & Does not natively support complex datatypes.                                                                                                        \\
+		\hline
+		Requires usage of if-statements in the form of branches.
+		                                                                                        & Requires usage of if-statements in the form of blocks.                                                                                              \\
+		\hline
+		Basic understanding of what an algorithm is, and how to explain the flow of your code is required to understand how the code you are writing works.
+		(Computational/algorithmic thinking)                                                    & Basic understanding of what an algorithm is, and how to explain the flow of your code is required to understand how the code you are writing works.
+		(Computational/algorithmic thinking)                                                                                                                                                                                                          \\
+		\hline
+	\end{tabular}
+	\caption{Comparison of Godot and Scratch}
+	\label{tab:godot-scratch}
 \end{table}
 
 \subsubsection{Scratch} is an educational programming environment designed to introduce young learners to fundamental programming concepts.
@@ -143,13 +143,12 @@ This can be a steep learning curve when moving to text-based programming.
 And a person with some degree of programming experience can see the way the blocks colors and compositions can be translated to a languages’ semantic features such as curly bracket, parentheses, semicolons, etc.
 It cannot be assumed that this is picked up by learners                          [Weintrop and Lewinsky].
 Kids from the article's study expresses the learning curve them trying Java after using Snap!
- Snap!
+Snap!
 Is another block-based programming language like Scratch.
 The majority opinion is that is better/easier to use.
 
-\subsubsection{Godot Orchestrator} is a flow-based visual scripting language designed for seamless integration into Godot's workflow.
-Rather than writing code line-by-line, users connect nodes visually to represent logic flow, making program structure immediately visible.
-It was built to ensure that anything implementable in GDScript or C# is also implementable within Orchestrator itself, providing feature parity with Godot's traditional scripting languages.
+\subsubsection{Godot Orchestrator}
+Godot Orchestrator is a flow-based visual scripting language designed for seamless integration into Godot's workflow. Rather than writing code line-by-line, users connect nodes visually to represent logic flow, making program structure immediately visible. It was built to ensure that anything implementable in GDScript or C\# is also implementable within Orchestrator itself, providing feature parity with Godot's traditional scripting languages.
 
 \paragraph{Learnability}
 In contrast to other languages like Scratch, Orchestrator was not designed as an education tool but rather as a full industry language since it is a plugin for a professional grade game engine.
@@ -166,7 +165,7 @@ The user interface, while familiar and easy to use for those with experience in 
 \paragraph{Concept Coverage}
 As a language designed for a full game engine, Orchestrator can implement all the concepts we plan to teach in this workshop, though some may be moderately complex to use.
 
-#### Instantiation – Creating and spawning game objects dynamically within scenes
+Instantiation – Creating and spawning game objects dynamically within scenes
 
 Orchestrator handles instantiation through dedicated nodes that load and create scene instances at runtime.
 Learners connect an ``Instantiate Scene'' node, specify the scene path, optionally pass constructor parameters through input pins, and receive the instantiated object as output.
@@ -176,7 +175,7 @@ This could teach what instantiation is but how is still abstracted away.
 This node-based approach makes the creation process explicit and visual, learners see exactly what's being created and what data flows into it.
 The drawback is that complex object pooling or batched instantiation patterns become verbose when represented as node chains.
 
-#### Functions – Organizing reusable logic into callable blocks
+Functions – Organizing reusable logic into callable blocks
 
 Orchestrator treats functions as first-class node graphs.
 Learners create custom event/function nodes, define input parameters as visual pins on the left side and return values on the right side, then build the function logic by connecting nodes within that graph.
@@ -184,7 +183,7 @@ Learners create custom event/function nodes, define input parameters as visual p
 This visual representation makes the relationship between inputs, logic, and outputs immediately clear.
 However, overloading (multiple functions with the same name but different parameters) isn't natively supported, and complex recursive functions become difficult to visualize.
 
-#### State Management – Tracking and updating object properties
+State Management – Tracking and updating object properties
 
 Orchestrator manages state through member variables (properties) that persist on the script node.
 Learners define these variables and use "Set Property" and "Get Property" nodes to modify and read them.
@@ -197,7 +196,7 @@ The downside is that this explicitness can create sprawling node graphs when man
 Can be used to create statemachine easily by making use of booleans just like normal textual languages.
 This however also means that it is possible to implement a <TODO>
 
-#### Event Handling – Responding to input, collisions, and signals
+Event Handling – Responding to input, collisions, and signals
 
 Orchestrator connects to Godot's signal system through event nodes.
 When a signal is emitted (input, collision, or custom event), a corresponding node fires.
@@ -258,14 +257,7 @@ Note the focus on computer games in the last example.
 Because we used computer games to teach software design principles, we decided to go for more games-related statements instead of generic programming-related statements.
 We deem this approach defendable, as game development has served as proxy for teaching programming principles in other research projects [Mathrani, 2016][Papadakis, 2020].
 
-A corresponding post-survey, with primarily the same questions, was performed after the workshop.
-Its goal was to capture the workshop’s effect on self-assessing their software design skills.
-Concretely, it was used to identify differences between Scratch and Godot Orchestrator teaching software design principles.
-Compared to the pre-survey, the post-survey was enriched by additional statements, to receive feedback on the usability of both tools.
-Those statements were phrased like “The visual programming language helped me to understand how my game saves and updates data”.
-Similarly to the pre-survey, statements were mapped to the software design concepts we wanted to convey during our workshop, as defined in the previous section.
-The surveys were conducted anonymously, however it was ensured that pre- and post-survey answers could be mapped to the same identifier.
-As recommend in [Nemoto&Beglar, 2013], other data collection methods (multiple-choice test, artifact evaluation) have been added, to get a more complete picture of the research subject.
+A corresponding post-survey, with primarily the same questions, was performed after the workshop. Its goal was to capture the workshop’s effect on self-assessing their software design skills. Concretely, it was used to identify differences between Scratch and Godot Orchestrator teaching software design principles. Compared to the pre-survey, the post-survey was enriched by additional statements, to receive feedback on the usability of both tools. Those statements were phrased like “The visual programming language helped me to understand how my game saves and updates data”. Similarly to the pre-survey, statements were mapped to the software design concepts we wanted to convey during our workshop, as defined in the previous section. The surveys were conducted anonymously, however it was ensured that pre- and post-survey answers could be mapped to the same identifier. As recommend in [Nemoto \& Beglar, 2013], other data collection methods (multiple-choice test, artifact evaluation) have been added, to get a more complete picture of the research subject.
 
 The question for both surveys were designed with students in mind, which would have at least a basic understanding of programming and related concepts like variables and control structures.
 According to the project focus on young learners, we expected to teach either middle school or young high school students.
@@ -324,15 +316,15 @@ One of the questions is shown in [listing].
 The other questions were designed in a similar way, while addressing other programming concepts too.
 
 \begin{enumerate}
-    \item You are making a game with 5 enemy types, which all move in the same way.
-    What is the best way to structure your game?
-    \begin{enumerate}[label=\Alph*.]
+	\item You are making a game with 5 enemy types, which all move in the same way.
+	      What is the best way to structure your game?
+	      \begin{enumerate}[label=\Alph*.]
 		      \item Copy the same movement-logic into every enemy.
-              \item Make one shared enemy behavior and use it for all enemies.
-              \item Place all enemy logic into a very large code block.
-              \item I don't know.
-    \end{enumerate}
-    \textbf{Correct answer: B}
+		      \item Make one shared enemy behavior and use it for all enemies.
+		      \item Place all enemy logic into a very large code block.
+		      \item I don't know.
+	      \end{enumerate}
+	      \textbf{Correct answer: B}
 \end{enumerate}
 
 The overall idea was to create questions that would strike an appropriate difficulty, while also mapping to the concepts we wanted to convey: modularity, instantiation, state management and event handling.
@@ -380,6 +372,6 @@ In the best case, we would see students use events to decouple components from e
 
 To evaluate each software design principle, we came up with the following scales:
 \begin{itemize}
-    \item Frequency: Always, Usually, Often, Sometimes, Never
-    \item Quality: Appropriate, Somewhat Appropriate, Inappropriate
+	\item Frequency: Always, Usually, Often, Sometimes, Never
+	\item Quality: Appropriate, Somewhat Appropriate, Inappropriate
 \end{itemize}
