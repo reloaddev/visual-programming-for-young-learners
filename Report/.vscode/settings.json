@@ -12,7 +12,7 @@
         }
     ],
     "[latex]": {
-        "editor.defaultFormatter": "james-yu.latex-workshop",
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
         "editor.formatOnSave": true
     },
     "latex-workshop.formatting.latex": "latexindent",
