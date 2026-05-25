@@ -45,6 +45,103 @@ The reason for these candidate to be chosen was because of their similarities, b
 And they cover two different visual programming paradigms.
 Furthermore, Orchestrator is a flow-based visual programming language with a UI similar to Unreal’s Blueprints, a proven, viable approach for game development, and Scratch remains the state of the art for teaching programming with visual scripting.
 
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|p{7cm}|c|c|}
+		\hline
+		\textbf{Criteria} & \textbf{Scratch} & \textbf{Godot Orchestrator} \\
+		\hline
+		Suitable for teaching & X &  \\
+		Can be used to apply physical analogies & X & X \\
+		Offers a general framework & X & X \\
+		Promotes a new approach for teaching software & X & X \\
+		\hline
+		Interactive and facilitates rapid code development & X & X \\
+		Promotes writing correct programs & X &  \\
+		Allows problems to be solved in ``bite-sized chunks'' & X & X \\
+		Provides a seamless development environment & X & X \\
+		\hline
+		Has a supportive user community & X & X \\
+		Is open source &  & X \\
+		Is consistently supported across environments & X & X \\
+		Is freely and easily available & X & X \\
+		Is supported with good teaching material & X &  \\
+		\hline
+		Not only used in education &  & X \\
+		Is extensible &  & X \\
+		Is reliable and efficient &  & X \\
+		Not an example of the QWERTY phenomenon & X & X \\
+		\hline
+	\end{tabular}
+	\caption{Comparison of Scratch and Godot Orchestrator using the seventeen criteria}
+\end{table}
+
+
+
+\subsection{Learning}
+
+\textbf{1. Suitable for teaching} \\
+
+A programming language should be designed with education in mind. It should have simple syntax, readable structure, and avoid unnecessary complexity so that beginners can focus on learning core programming concepts rather than struggling with the language itself.
+
+\textbf{2. Can be used to apply physical analogies}  \\
+The language should support visual or interactive elements (such as graphics or simulations) that help students relate programming concepts to real-world or physical experiences, making abstract ideas easier to understand.
+
+
+\textbf{3. Offers a general framework} \\
+The language should teach fundamental programming principles that are transferable to other languages, ensuring students build a strong conceptual foundation rather than learning language-specific tricks.
+
+\textbf{4. Promotes a design driven approach for teaching software} \\
+The language should support structured thinking about problem solving and software development, not just coding. It should promote methodology, design principles, and systematic thinking.
+
+\subsection{Design and Environment}
+
+\textbf{5. Is interactive and facilitates rapid code development} \\
+The language should allow students to quickly write and test small pieces of code, ideally with immediate feedback (e.g., REPL or interactive shell), which helps reinforce learning through experimentation.
+
+\textbf{6. Promotes writing correct programs} \\
+The language should encourage correctness through features such as clear error messages, type checking, or design practices that reduce bugs and promote disciplined programming.
+
+\textbf{7. Allows problems to be solved in ``bite-sized chunks''} \\
+The language should support modularity (e.g., functions, procedures, or classes), allowing students to break complex problems into smaller, manageable parts.
+
+\textbf{8. Provides a seamless development environment} \\
+The tools associated with the language (e.g., IDEs) should integrate the development process smoothly, from writing code to testing and debugging, without unnecessary barriers or complexity.
+
+\subsection{Support and Availability}
+
+\textbf{9. Has a supportive user community} \\
+A strong community provides tutorials, documentation, forums, and help resources, which are essential for beginners who need assistance outside the classroom.
+
+\textbf{10. Is open source, so anyone can contribute to its development} \\
+An open-source language allows anyone to study, modify, and contribute to its development, reducing costs and encouraging transparency and collaboration.
+
+\textbf{11. Is consistently supported across environments} \\
+The language should work reliably across different operating systems and platforms, allowing students to use it in various settings without compatibility issues.
+
+\textbf{12. Is freely and easily available} \\
+The language and its tools should be accessible at no cost and easy to install, ensuring that all students can use it without financial or technical barriers.
+
+\textbf{13. Is supported with good teaching material} \\
+There should be high-quality textbooks, tutorials, exercises, and course materials available to support both teaching and self-study.
+
+\subsection{Beyond Introductory Programming}
+
+\textbf{14. Not only used in education} \\
+The language should also be relevant in industry or real-world applications, which can motivate students and demonstrate practical value.
+
+\textbf{15. Is extensible} \\
+The language should allow additional features or libraries to be added, enabling students to expand their projects and explore more complex applications over time.
+
+\textbf{16. Is reliable and efficient} \\
+The language should produce dependable programs and perform reasonably well, ensuring it is suitable for real applications and not just simple educational exercises.
+
+\textbf{17. Not an example of the QWERTY phenomenon} \\
+The language should be chosen based on its current usefulness and educational value, not just because it has been traditionally used. It should remain relevant and forward-looking rather than outdated.
+
+
+
 \subsubsection{Required prior knowledge}
 The knowledge gaps below covers understanding of concepts that was necessary to operate the programming languages, but that the students did not possess before beginning the workshop.
 In the case of Godot, explaining datatypes, vectors, if-statements, wnd how to understand a simple algorithm was required before teaching.
@@ -306,13 +403,13 @@ The other questions were designed in a similar way, while addressing other progr
 
 \begin{enumerate}
 	\item You are making a game with 5 enemy types, which all move in the same way. What is the best way to structure your game?
-	      \begin{enumerate}[label=\Alph*.]
+	\begin{enumerate}[label=\Alph*.]
 		      \item Copy the same movement-logic into every enemy.
-		      \item Make one shared enemy behavior and use it for all enemies.
-		      \item Place all enemy logic into a very large code block.
-		      \item I don't know.
-	      \end{enumerate}
-	      \textbf{Correct answer: B}
+			  \item Make one shared enemy behavior and use it for all enemies.
+			  \item Place all enemy logic into a very large code block.
+			  \item I don't know.
+	\end{enumerate}
+	\textbf{Correct answer: B}
 \end{enumerate}
 
 The overall idea was to create questions that would strike an appropriate difficulty, while also mapping to the concepts we wanted to convey: modularity, instantiation, state management and event handling.
