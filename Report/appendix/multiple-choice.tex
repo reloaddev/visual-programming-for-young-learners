@@ -1,0 +1,127 @@
+\subsection{Multiple-Choice Test}
+
+The following multiple-choice test was administered to participants. Each question targets a specific programming concept, with one correct answer per question.
+
+% Question 1
+\begin{enumerate}
+
+	\item \textbf{Modularity} \\
+	      You are building a game with 5 enemies that all move in the same way. \\[0.5em]
+	      What is the best way to structure the program?
+	      \begin{enumerate}
+		      \item Copy the same movement logic for each enemy.
+		      \item Create one enemy behaviour and reuse it for all enemies.
+		      \item Put all enemy logic into one very large block of code.
+		      \item I don't know.
+	      \end{enumerate}
+	      \textit{Correct answer: B}
+
+	      % Question 2
+	\item \textbf{Event Handling} \\
+	      In a game, the player collects a coin. The score should increase immediately. \\[0.5em]
+	      What should trigger the score update?
+	      \begin{enumerate}
+		      \item A time interval that increases the score by the number of coins touched in the previous interval.
+		      \item An event that occurs when the player touches the coin.
+		      \item A random event in the program that eventually fires when moving close to a coin.
+		      \item I don't know.
+	      \end{enumerate}
+	      \textit{Correct answer: B}
+
+	      % Question 3
+	\item \textbf{Data / State} \\
+	      A game has a score variable that increases when coins are collected. \\[0.5em]
+	      Which approach best organises the score data?
+	      \begin{enumerate}
+		      \item Each object has its own score variable to avoid mixing up coin scores.
+		      \item The score is written directly into multiple parts of the program wherever the score is needed.
+		      \item The score is stored in one place and updated when coins are collected.
+		      \item I don't know.
+	      \end{enumerate}
+	      \textit{Correct answer: C}
+
+	      % Question 4
+	\item \textbf{State Machines} \\
+	      A game character should be able to be in the states: running, jumping, and dead. The character switches state based on input and in-game events. \\[0.5em]
+	      What is the best way to handle the character's states?
+	      \begin{enumerate}
+		      \item Create one state machine that gathers all states in one place and controls the transitions between them.
+		      \item Use many if-statements spread throughout the code to check the character's situation wherever the behaviour needs to change.
+		      \item Create a separate script for each state, each keeping track of when the other scripts should be activated.
+		      \item I don't know.
+	      \end{enumerate}
+	      \textit{Correct answer: A}
+
+	      % Question 5
+	\item \textbf{Instantiation} \\
+	      You are building a game with three types of coins: gold (10 points), silver (5 points), and bronze (1 point). You have created a ``Coin'' behaviour that handles collection and scoring. \\[0.5em]
+	      What is the best way to create the three coin types?
+	      \begin{enumerate}
+		      \item Create three separate behaviours (GoldCoin, SilverCoin, BronzeCoin) with different point values.
+		      \item Create one ``Coin'' behaviour with a point value variable, and then create three instances with different values.
+		      \item Create one coin, copy it three times, and then use a script to change the coin values based on their position on the screen.
+		      \item I don't know.
+	      \end{enumerate}
+	      \textit{Correct answer: B}
+
+	      % Question 6
+	\item \textbf{Instantiation} \\
+	      You are making a game where enemies appear as the player shoots them down. \\[0.5em]
+	      What happens when the program continuously creates new enemies and deletes them again?
+	      \begin{enumerate}
+		      \item The program slows down over time, because creating and deleting objects takes time.
+		      \item The program becomes faster, because there are always only a few enemies at a time.
+		      \item It has no effect on the program's speed.
+		      \item I don't know.
+	      \end{enumerate}
+	      \textit{Correct answer: A}
+
+	      % Question 7
+	\item \textbf{Modularity} \\
+	      You are building a game where the player can move, shoot, take damage, and collect items. All of this is currently written in a single script. \\[0.5em]
+	      What is the best way to organise this?
+	      \begin{enumerate}
+		      \item Keep everything in one script so it is always easy to find.
+		      \item Move all logic to the level or scene script to have one centralised place.
+		      \item Split the logic into separate components (e.g.\ Movement, Combat, Inventory), each responsible for one area.
+		      \item I don't know.
+	      \end{enumerate}
+	      \textit{Correct answer: C}
+
+	      % Question 8
+	\item \textbf{Data / State} \\
+	      Your game character can be in one of three states: running, jumping, or attacking. You want to ensure that only one state is active at a time. \\[0.5em]
+	      What is the best way to keep track of this?
+	      \begin{enumerate}
+		      \item Use a separate True/False variable for each state (e.g., isRunning, isJumping, isAttacking).
+		      \item Determine the state each frame by checking the player's position and velocity.
+		      \item Store the current state in one variable (e.g., playerState = ``running'') and update it when the state changes.
+		      \item I don't know.
+	      \end{enumerate}
+	      \textit{Correct answer: C}
+
+	      % Question 9
+	\item \textbf{State Machines} \\
+	      A door in a game can be closed, open, or locked. \\[0.5em]
+	      What best describes what a state machine does in this case?
+	      \begin{enumerate}
+		      \item It keeps track of which state the door is in, and determines when it can switch state.
+		      \item It draws the door on the screen in the correct colour depending on its appearance.
+		      \item It stores the door's geographical position in the game world.
+		      \item I don't know.
+	      \end{enumerate}
+	      \textit{Correct answer: A}
+
+	      % Question 10
+	\item \textbf{Event Handling} \\
+	      A button in a game should start the game when the player clicks it. \\[0.5em]
+	      What is the best way to make the button respond to a click?
+	      \begin{enumerate}
+		      \item Check every frame whether the mouse is over the button and whether it has been clicked, then perform the action.
+		      \item Listen for a ``click'' event on the button, and perform the action when the event occurs.
+		      \item Create a variable that counts how many times the button has been clicked.
+		      \item I don't know.
+	      \end{enumerate}
+	      \textit{Correct answer: B}
+
+\end{enumerate}
