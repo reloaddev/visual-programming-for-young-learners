@@ -394,9 +394,8 @@ If this condition is satisfied, both the ghost and the bullet are removed from t
 
 [22] as mentioned before used custom blocks/functions right away, but the way they were placed in Scratch left some to be desired.
 The Scratch code window can quickly become cluttered, and that happened to [22].
-[22] understood the reusability of their functions, but because of limited experience could not see a way to reduce clutter.
 For example [22] made a ``movement right'' and a ``movement left'' function, but had the conditional key press statement outside the function.
-This conditional if added to the function could have reduced a lot of visual clutter.
+This conditional "if" if added to the function could have reduced a lot of visual clutter.
 
 Was quick to use it, and used it a lot in the ``knight'' part of the workshop.
 The usage of functions did decline for other sprites, as they did not need as much functionality like the knight.
@@ -418,15 +417,8 @@ That would have been a great option to reduce clutter and would still fit in wit
 
 \paragraph{Instantiation}
 
-[22] did instantiation at first when they came to the ``ghost'' and ``bullet'' part of the workshop.
-Initially for the bullet did not use instantiation or ``clone''.
-And the same did go for the ``ghost'' sprite, which would move towards the player and reset its position when hit.
-[22] did end up using instantiation for both the ``ghost'' and ``bullet'' sprites.
-Those two sprites were the only intended places to use instantiation.
-[22] changed from one ``ghost'' that would change its position upon being hit to a wave spawn system.
-With the help of instructors [22] made a ``ghost'' spawner.
-The bullets were also changed to use instantiation, to keep up with the ghosts.
-
+[22] used instantiation for both the ``ghost'' and ``bullet'' sprites as per the gamedev instructions.
+Those two sprites were the only intended places to use instantiation. The final implementation of the ghost spawning mechanic was differnt from the provided intructions. [22] made a wave based spawning system, where X amount of ghosts would spawn per X wave.
 
 
 \begin{itemize}
@@ -458,12 +450,8 @@ The costume changes were added to left and right movement functions, a fitting p
 
 \paragraph{Events}
 
-[22] used basic event handling concepts for the keyboard inputs and collision detection.
-The implementation of the event handling used forever loops and if statements, rather than a dedicated event ``broadcast''.
-There were attempts at using the ``broadcast'' block, but their implementation failed due to lack of experience.
-
-With help from instructors [22] did implement broadcast events to trigger a new enemy wave after a wave completion.
-In [22]'s defense, they were instructed to use for-loops and key-pressed conditionals when making the knight and its movement.
+[22] used basic event handling concepts for the keyboard inputs and collision detection. They used the built "touches" block to detect collisions, that was the right thing to do in Scrach. 
+[22] used for loops and if statements to check for key pressing events for Knight movement.
 If [22] had used the event block for key presses, the movement would have been poor.
 
 
