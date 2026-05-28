@@ -7,10 +7,10 @@ Both languages are incorporated into game engines by the developers, meaning tha
 Students in each group were asked to build a game using the language, which incorporated the following Software development concepts:
 
 \begin{itemize}
-	\item Instantiation
-	\item Modularity
-	\item State Management
-	\item Event Handling
+    \item Instantiation
+    \item Modularity
+    \item State Management
+    \item Event Handling
 \end{itemize}
 
 These concepts were chosen as they serve as ways to introduce topics commonly taught during the first year of Software engineering at university, whilst also being commonplace in game development.
@@ -45,52 +45,93 @@ The reason for these candidate to be chosen was because of their similarities, b
 And they cover two different visual programming paradigms.
 Furthermore, Orchestrator is a flow-based visual programming language with a UI similar to Unreal’s Blueprints, a proven, viable approach for game development, and Scratch remains the state of the art for teaching programming with visual scripting.
 
-\subsubsection{Required prior knowledge}
-The knowledge gaps below covers understanding of concepts that was necessary to operate the programming languages, but that the students did not possess before beginning the workshop.
-In the case of Godot, explaining datatypes, vectors, if-statements, wnd how to understand a simple algorithm was required before teaching.
+Using the criteria defined by Mannila and Raadt~\cite{mannila_objective_2006} the two languages will be compared for their ability to introduce programming to novices.
 
-\begin{table}[h]
-	\centering
-	\begin{tabular}{|p{7cm}|p{7cm}|}
-		\hline
-		\textbf{Godot}                                                                          & \textbf{Scratch}                                                                                                                                    \\
-		\hline
-		Requires knowledge of simple datatypes (\texttt{int}, \texttt{float}, \texttt{string}). & Has blocks for the programmer to input knowledge and texts.
-		Explicit knowledge of variables were not required.                                                                                                                                                                                            \\
-		\hline
-		Requires knowledge of vectors.
-		                                                                                        & Asks the user to input coordinates.
-		Explicit knowledge of vectors is not required.                                                                                                                                                                                                \\
-		\hline
-		Requires the use of complex datatypes specific to the engine, i.e.\ \texttt{charactercontroller}, \texttt{Node2D}, etc.
-		                                                                                        & Does not natively support complex datatypes.                                                                                                        \\
-		\hline
-		Requires usage of if-statements in the form of branches.
-		                                                                                        & Requires usage of if-statements in the form of blocks.                                                                                              \\
-		\hline
-		Basic understanding of what an algorithm is, and how to explain the flow of your code is required to understand how the code you are writing works.
-		(Computational/algorithmic thinking)                                                    & Basic understanding of what an algorithm is, and how to explain the flow of your code is required to understand how the code you are writing works.
-		(Computational/algorithmic thinking)                                                                                                                                                                                                          \\
-		\hline
-	\end{tabular}
-	\caption{Comparison of Godot and Scratch}
-	\label{tab:godot-scratch}
-\end{table}
+
 
 \subsubsection{Scratch} is an educational programming environment designed to introduce young learners to fundamental programming concepts.
 It uses a block-based visual programming paradigm, where users construct logic by snapping together graphical blocks instead of writing textual code [Resnick].
 
-\paragraph{Learnability}
+########
+########
+
+\paragraph{Suitable for teaching}
 Scratch was designed with a high learnability factor.
 Scratch has colorful categories that create a clear separation of blocks functionality, this does require the user to know where to look for a certain type of block.
-To alleviate this the interface was designed to be simple to navigate, there is no need/option to get lost in engine folders and menus.
+The interface was designed to be simple to navigate, there is no need/option to get lost in engine folders and menus.
 No setup needed, users can start making a game right away, there even is no need to provide your own sprites, scratch provides a library of them.
 The block is “drag and drop” and the functionality of the block which is shown by their name is to the letter.
 The design of the block also shows “where” they can be placed with their notches and shapes.
 Scratch requires a relative low reading comprehension level to be usable.
 
+\paragraph{Can be used to apply physical analogies}
+Physical analogies can be used in Scratch, being able to make games is a great for applying analogies.
+For example the background of Scratch's viewport could be a road, and the analogy could be "the chicken crossed the road", and then have the assignment be what the teacher wants to teach.
+
+\paragraph{Offers a general framework}
+Learning the programming fundamentals is possible with Scratch.
+Scratch provides a framework for learning, it is what Scratch is trying to push.
+
+\paragraph{Promotes a design driven approach for teaching software}
+Scratch with its drag and drop blocks promotes experimentation, prototyping and iteration.
+Users will focus on structure and interaction between blocks, and can get rapid feedback on their code.
+
+\paragraph{Is interactive and facilitates rapid code development}
+Scratch is highly interactive, the users will need to use blocks from most categories to make a game.
+The user does not have to delete an entire code to make a new, they can save it in the Scratch backpack or have of to the side and drag it back in of their new code does not work.
+And with the ease of use of the blocks, code development can be very rapid.
+
+\paragraph{Promotes writing correct programs}
+Scratch partially supports writing correct programs, the blocks structure will display the structure of the program.
+These blocks will also light when the program is running, so that it is possible to catch errors in the logic, if something did not happen.
+It is limited when it comes to error messages, if a block is not working nothin will happen, so it will possible to miss that it did not happen.
+Scratch does not have type checking, it either a interger or a String in Scratch.
+
+\paragraph{Allows problems to be solved in ``bite-sized chunks''}
+Scratch supports modularity, it has the block categoty called "my blocks" where users can make their own blocks/functions.
+Different sprites are like classes in other programming languages, they have their own code and variables.
+And they have the ability to interact with each other.
+
+\paragraph{Provides a seamless development environment}
+Scratch comes with its own integrated development environment, where everything is in one place, the code, sprite, background and sound editor are available to the user.
+
+\paragraph{Has a supportive user community}
+A strong community provides tutorials, documentation, forums, and help resources, which are essential for beginners who need assistance outside the classroom.
+Scratch has a website the community can share the games, and for others to play.
+On the same website users can the Scratch forum to ask questions and get help.
+There is also tutorials for many aspects of Scratch on the website.
+
+\paragraph{Is open source, so anyone can contribute to its development}
+Scratch is open source and is managed by a small team, and anyone can contribute to its development.
+
+\paragraph{Is consistently supported across environments}
+Scratch is mainly a web based application, so it is supported across platforms that support a web browser.
+
+\paragraph{Is freely and easily available}
+Scratch is free to use and there is no technical barriers to use it.
+Scratch runs in the browers, so having a browser is the only requirement.
+
+\paragraph{Is supported with good teaching material}
+There is a lot of resources for self-study on the Scratch website, and in general on the internet.
+There is also a section on the Scratch website for educators, with the resources and curriculums guides for teaching.
+
+\paragraph{Not only used in education}
+Scratch is not relevant in industry or real-world applications.
+But there are a community of users that use Scratch to makes games beyond an educational scope.
+
+\paragraph{Is extensible}
+Scratch's extensibility is limited to the few addons that is available in Scratch.
+There is a Google Chrome extension that gives users more choices of addons.
+
+\paragraph{Is reliable and efficient}
+In the context of Scratch, the code is reliable and efficient enough.
+But the code can't be taken beyond the scope of Scratch, and games made with it should be able to run on any machine.
+
+\paragraph{Not an example of the QWERTY phenomenon}
+Scratch is relevant for educational purposes, its is not traditionally used for teaching.
+
 \paragraph{Concept Coverage}
-Scratch can atleast teach following programming concepts
+Scratch can be used to teach following programming concepts
 
 - Variables, Loops, Conditionals, Functions, Events, Arrays
 - Objects oriented
@@ -108,49 +149,24 @@ Events and their handling is done with the blocks “Broadcast” and “Receive
 Broadcast sends a message out to anyone listing for it, and will execute code on receive.
 Other kind of events can happen and trigger on other blocks like “touching”, a way to execute code when two sprites are colliding
 
-(*)Arrays are limited to storing strings, so there is limited coverage of what arrays can do in other programming languages can do.
+Arrays are limited to storing strings, so there is limited coverage of what arrays can do in other programming languages can do.
 
-(*)Object oriented is there with sprites, but Scratch does not support the kind of functionality that can be found in other programming languages.
+Object-oriented is there with sprites, but Scratch does not support the kind of functionality that can be found in other programming languages.
 For example, it is not possible for a sprite to call a function in another sprite if they are interacting with.
 Instead, you have to use global variables and Broadcasts to achive similar functionality to other programming languages.
-Broadcast is a block in Scratch that behavis like an event, that can send messages to other sprites.
+Broadcast is a block in Scratch that behaves like an event, that can send messages to other sprites.
 
 Scratch have the ability to teach the other mentioned topics well.
 The ability to progress ones programming ability is there, “clean code” and good practices can be taught, because the “spaghetti code” will take up the limited user space on the screen encouraging to use clean code.
 
-\paragraph{Engagement and Creativity}
-Scratch was designed to be a fun, easy way to create games.
-It provides other functionality beyond that.
-It has a built-in sprite editor, a background editor and a sound editor.
-Scratch for being a very limited tool/engine provides a great deal of flexing room within that space.
-And being familiar with these built in tools creates opportunity for users to engage with Scratch/their game the way they want to.
-Also has the easy ability to create and share the game on the website for others to play and rate/talk about/like/comment on.
-Scratch providing these outlets for creativite expression and collaboration will have a positive effect on learners [Beghetto].
-
-\paragraph{Setup and Maintenance}
-Scratch has a very easy setup, the only requirements is an internet connection and having a Scratch account.
-It does not require an installation, because it runs in the browser.
-The game creation environment comes setup up when you make a new game.
-Scratch does not require “any” hardware to run, it's very easy on the users machine.
-Maintenance is taken care of by Scratch, the user does not have to worry about version numbers and updates.
-
-\paragraph{Transition to advanced tools}
-This depends on whether programming concepts learned through with visual programming can be translated to text-based coding.
-Scratch is an effective tool for beginners to get into programming, because its visual block-based programming paradigm, removes complex things like syntax and lets the learner focus on programming.
-The abstraction present in Scratch can also limit a learners understanding and experience text-based syntax, text-based debuging.
-This can be a steep learning curve when moving to text-based programming.
-
-And a person with some degree of programming experience can see the way the blocks colors and compositions can be translated to a languages’ semantic features such as curly bracket, parentheses, semicolons, etc.
-It cannot be assumed that this is picked up by learners                          [Weintrop and Lewinsky].
-Kids from the article's study expresses the learning curve them trying Java after using Snap!
-Snap!
-Is another block-based programming language like Scratch.
-The majority opinion is that is better/easier to use.
 
 \subsubsection{Godot Orchestrator}
-Godot Orchestrator is a flow-based visual scripting language designed for seamless integration into Godot's workflow. Rather than writing code line-by-line, users connect nodes visually to represent logic flow, making program structure immediately visible. It was built to ensure that anything implementable in GDScript or C\# is also implementable within Orchestrator itself, providing feature parity with Godot's traditional scripting languages.
+Godot Orchestrator is a flow-based visual scripting language designed for seamless integration into Godot's workflow.
+Rather than writing code line-by-line, users connect nodes visually to represent logic flow, making program structure immediately visible.
+It was built to ensure that anything implementable in GDScript or C\# is also implementable within Orchestrator itself, providing feature parity with Godot's traditional scripting languages.
 
-\paragraph{Learnability}
+\paragraph{Suitable for teaching}
+
 In contrast to other languages like Scratch, Orchestrator was not designed as an education tool but rather as a full industry language since it is a plugin for a professional grade game engine.
 
 Learning Orchestrator therefore requires a foundational understanding of variables, dataflow, and functions/methods, but it remains reasonably accessible for learners with these prerequisites.
@@ -161,6 +177,119 @@ The main drawback of Orchestrator is the same drawback which can be found in all
 Deeply nested logic or large state machines become harder to read and debug compared to traditional text-based code, potentially lengthening development time for intricate systems.
 
 The user interface, while familiar and easy to use for those with experience in other flow-based languages like Unreal's Blueprints or the general Godot workflow, can be overwhelming for people unfamiliar with these tools.
+
+\paragraph{Can be used to apply physical analogies}
+Godot is a powerful engine with extensive creative possibilities.
+It enables learners to create fully functional, even commercially viable games.
+Its 2D and 3D capabilities, physics engine, and animation tools allow for rapid prototyping.
+
+The ability to visually simulate real-world interactions, such as physics-based movement or object interaction, allows learners to apply programming concepts through meaningful analogies.
+
+The amount of freedom should allow for a high amount of motivation since there is full creative freedom.
+
+\paragraph{Offers a general framework}
+
+As part of a full-featured game engine, Orchestrator supports a wide range of programming concepts.
+For instance, Godot provides built-in support for patterns such as the observer pattern, allowing learners to explore event-driven architectures.
+
+Furthermore, the environment enables the use of functions, classes, and other object-oriented programming constructs, supporting the development of a general and transferable understanding of software design principles.
+
+This supports the development of transferable programming knowledge by exposing learners to concepts that extend beyond the visual environment.
+
+\paragraph{Promotes a design driven approach for teaching software}
+
+Orchestrator partially supports a design-driven approach by representing programs as interconnected nodes within a graphical environment.
+This structure makes the flow of execution explicit and allows learners to reason about program behavior in terms of control flow and interactions between components.
+In this sense, it supports thinking about problem structure rather than focusing solely on individual instructions.
+
+Furthermore, as part of the Godot game engine, Orchestrator is embedded within a broader development environment that includes tools, libraries, and assets.
+This allows learners to engage with elements of the software development process beyond simple implementation, such as prototyping and system integration.
+
+However, Orchestrator does not explicitly enforce design principles or provide a structured methodology for software development.
+The flexibility of the node-based approach allows learners to construct programs in an unstructured manner, which may result in complex or poorly organized graphs.
+As such, while Orchestrator facilitates aspects of design-oriented thinking, it does not fully promote a comprehensive design-driven methodology for teaching software.
+
+\paragraph{Is interactive and facilitates rapid code development}
+
+Orchestrator, as a visual scripting system integrated within a game engine, enables code to be tested immediately within the game environment.
+This provides instant visual feedback, allowing learners to quickly observe the effects of their changes and iterate on their solutions.
+Such interactivity supports rapid prototyping and encourages experimentation.
+
+However, the development process is inherently tied to a game or scene context.
+This means that implementing and testing new ideas typically requires at least a partial setup of a larger application, rather than allowing completely isolated experimentation.
+As a result, while Orchestrator provides strong interactive feedback and supports rapid development, it only partially fulfills the criterion, as it does not fully support testing small program fragments independently of a broader context.
+
+\paragraph{Promotes writing correct programs}
+
+Orchestrator promotes the development of correct programs through its built-in type checking and error prevention mechanisms.
+It prevents invalid connections between incompatible types, reducing the likelihood of type-related bugs during development.
+Additionally, functions and variables are represented as predefined nodes that are selected and placed in the graph, eliminating syntactic errors such as misspellings.
+
+However, while these features reduce common programming mistakes, they do not provide mechanisms for systematically ensuring program correctness.
+Unlike approaches such as Design by Contract, Orchestrator does not support explicit validation of program behavior through preconditions, postconditions, or invariants.
+As a result, correctness is primarily achieved by preventing low-level errors rather than encouraging a fully structured and disciplined approach to software verification.
+Therefore, Orchestrator partially fulfills this criterion.
+
+\paragraph{Allows problems to be solved in ``bite-sized chunks''}
+
+Orchestrator supports problem decomposition by allowing programs to be structured into smaller, manageable components such as functions and classes.
+Functions enable specific pieces of functionality to be defined independently, allowing learners to focus on individual aspects of a problem before integrating them into a larger system.
+
+Additionally, the Godot engine introduces a hierarchical structure through its scene-based architecture.
+Each scene encapsulates a specific piece of functionality, such as a player character or an enemy, which can be developed and tested independently.
+These scenes can then be composed to form more complex systems, supporting a top-down understanding of the overall application.
+
+This combination of functional decomposition and hierarchical organization allows learners to approach problems in smaller, comprehensible steps, thereby fulfilling the criterion of enabling problems to be solved in ``bite-sized chunks''.
+
+\paragraph{Provides a seamless development environment}
+
+
+Orchestrator benefits from its integration within the Godot game engine, providing a unified environment for scripting, asset management, and testing.
+Learners can write, test, and debug code within the same interface, reducing the need to switch between tools and supporting a smooth development workflow.
+This integration simplifies the development process and allows learners to focus on problem-solving rather than tool configuration.
+
+\paragraph{Has a supportive user community}
+
+
+Godot has an active and growing open-source community that provides extensive documentation, tutorials, and discussion forums.
+While the Orchestrator plugin itself has a smaller and less mature community, learners can still benefit from the broader Godot ecosystem, as many concepts and workflows are shared across scripting approaches.
+
+\paragraph{Is open source, so anyone can contribute to its development}
+
+Godot is simple to set up: a single executable with no installation required, and it is free and open-source.
+Orchestrator is installed as a plugin via the asset manager and is also open source.
+
+\paragraph{Is consistently supported across environments}
+
+Godot the engine that Orchestrator is a plugin for is available on a variety of platforms and therefore orchestrator is also available on all platforms.
+
+\paragraph{Is freely and easily available}
+
+Godot is a free game engine, and the plugin orchestrator is easy to install from within the engine.
+
+\paragraph{Is supported with good teaching material}
+
+Godot receives regular updates (version 4.6.2 at the time of writing), and has an array of teaching materials specific to the engine.
+However, Orchestrator is newer and its ecosystem is less mature compared to tools like Unreal’s Blueprints, which means less tutorials, but orchestrator shares build in functions with the inherent textuel scripting language of godot and can therefor in most cases reuse the tutorials from there.
+
+\paragraph{Not only used in education}
+
+It is not primarily designed for education, but rather for professional game development.
+However, its features make it suitable for educational use in certain contexts.
+
+\paragraph{Is extensible}
+
+Orchestrator seamlessly integrates with any library meant to run with the other languages of the godot engine.
+Any class written in the other languages can be referenced in the visual script.
+
+\paragraph{Is reliable and efficient}
+
+The execution of code is generally efficient, as it builds upon the optimized core of the Godot engine, which is implemented in C++.
+However, visual scripting may introduce some overhead compared to lower-level implementations.
+
+\paragraph{Not an example of the QWERTY phenomenon}
+
+It is not an example of the QWERTY phenomenon, it is a relatively new language within a relatively new game engine, the engine is forward-looking and so far the language is as well.
 
 \paragraph{Concept Coverage}
 As a language designed for a full game engine, Orchestrator can implement all the concepts we plan to teach in this workshop, though some may be moderately complex to use.
@@ -186,68 +315,94 @@ However, overloading (multiple functions with the same name but different parame
 State Management – Tracking and updating object properties
 
 Orchestrator manages state through member variables (properties) that persist on the script node.
-Learners define these variables and use "Set Property" and "Get Property" nodes to modify and read them.
+Learners define these variables and use \texttt{Set Property} and \texttt{Get Property} nodes to modify and read them.
 
-It supports the following datatypes: Boolean, Integer, Float, String, StringName, Rect2, Recti, Vector2, Vector2i, Vector3, Vector3i, Vector4, Vector4i, Transform2D, Transform3D, Plane, Quaternion, AABB, Basis, Projection, Color, NodePath, RID, Object, Dictionary, Array, Callable, PackedByteArray, PackedStringArray, PackedInt32Array, PackedInt64Array, PackedFloat32Array, PackedFloat64Array, PackedVector2Array, PackedVector3Array, PackedColorArray.
+Orchestrator supports a wide range of data types, including primitives, vectors, and complex structures such as arrays and dictionaries, allowing learners to work with a variety of data representations.
 
 State changes are explicit, which makes tracking easier.
 The downside is that this explicitness can create sprawling node graphs when many variables are used.
 
-Can be used to create statemachine easily by making use of booleans just like normal textual languages.
-This however also means that it is possible to implement a <TODO>
+Can be used to create state machine easily by making use of booleans just like normal textual languages.
 
 Event Handling – Responding to input, collisions, and signals
 
 Orchestrator connects to Godot's signal system through event nodes.
 When a signal is emitted (input, collision, or custom event), a corresponding node fires.
 
-Learners connect input nodes (e.g., "Input Action Pressed") directly to logic, making cause-and-effect relationships clear.
+Learners connect input nodes (e.g., \texttt{Input Action Pressed}) directly to logic, making cause-and-effect relationships clear.
 However, managing multiple overlapping events can lead to tangled graphs.
 
-\paragraph{Engagement and Creativity}
-Godot is a powerful engine with extensive creative possibilities.
-It enables learners to create fully functional, even commercially viable games.
-Its 2D and 3D capabilities, physics engine, and animation tools allow for rapid prototyping.
+\subsection{Comparison of languages}
 
-The amount of freedom should allow for a high amount of motivation since there is full creative freedom.
-It could however also be too much the young learners potentialy causing cognitive overload as they are asked to confront to many new things at once[Reducing Cognitive Overload for Students in Higher Education: A Course Design Case Study].
 
-However, Godot’s community is smaller than engines like Unity or Unreal, meaning fewer tutorials, assets, and plugins.
-Orchestrator is even more niche, so documentation and learning resources are more limited.
+\begin{table}[!htbp]
+	\centering
+	\begin{tabular}{|p{7cm}|c|c|}
+		\hline
+		\textbf{Criteria}                                     & \textbf{Scratch} & \textbf{Godot Orchestrator} \\
+		\hline
+		Suitable for teaching                                 & X                &                            \\
+		Can be used to apply physical analogies               & X                & X                           \\
+		Offers a general framework                            & X                & X                           \\
+		Promotes a design-driven approach                     &                  & X                           \\
+		\hline
+		Interactive and facilitates rapid code development    & X                & X                           \\
+		Promotes writing correct programs                     &                  &                            \\
+		Allows problems to be solved in ``bite-sized chunks'' & X                & X                           \\
+		Provides a seamless development environment           & X                & X                           \\
+		\hline
+		Has a supportive user community                       & X                & X                           \\
+		Is open source                                        & X                & X                           \\
+		Is consistently supported across environments         & X                & X                           \\
+		Is freely and easily available                        & X                & X                           \\
+		Is supported with good teaching material              & X                &                             \\
+		\hline
+		Not only used in education                            &                  & X                           \\
+		Is extensible                                         &                  & X                           \\
+		Is reliable and efficient                             &                  & X                           \\
+		Not an example of the QWERTY phenomenon               & X                & X                           \\
+		\hline
+		Concept Coverage                                      &      X            & X                           \\
+		\hline
+	\end{tabular}
+	\caption{Comparison of Scratch and Godot Orchestrator using the seventeen criteria}\label{tab:tableComparisonSummary}
+\end{table}
 
-\paragraph{Setup and Maintenance}
-Godot is simple to set up: a single executable with no installation required, and it is free and open-source.
-Orchestrator is installed as a plugin via the asset manager.
 
-Godot receives regular updates (version 4.6.2 at the time of writing).
-However, Orchestrator is newer and its ecosystem is less mature compared to tools like Unreal’s Blueprints.
-
-\paragraph{Transition to advanced tools}
-Transitioning from Orchestrator to GDScript is smooth, since both use the same API. Learners can reuse documentation and examples.
-
-That said, GDScript itself is relatively easy to learn, so some learners may choose to skip Orchestrator.
-However, starting with Orchestrator may provide a stronger conceptual foundation in program flow and logic.
-
-**It is possible to create fully profeional grade games with both so there isn’t a need to shift to the textuel programing languages.**
-
-<TODO> Add comparative summary table
 
 Scratch and Godot Orchestrator employ distinct visual programming paradigms: Scratch uses block-based, while Orchestrator implements a flow-based.
 Scratch has a high level of abstraction which makes it good for beginners while Godot Orchestrator being a plugin for a professional grade game engine makes it better for more complex concepts.
 
-They both encourage creativity but the extent/scale of the projects are different.
-Orchestrator being a plugin for a full game engine can make professional grade games in both 2d and 3d, while scratch is more limited to smaller scale 2d games.
-Godot being a more advanced engine means it might be a little overwhelming for beginners while scratch with its more limited scale could be more welcoming.
+This aligns with criteria such as \textit{“Suitable for teaching”}, \textit{“Is freely and easily available”}, and \textit{“Has a supportive user community”}, where Scratch consistently scores higher than Orchestrator in Table~\ref{tab:tableComparisonSummary}.
+In contrast, Orchestrator only partially fulfills these criteria due to its reliance on prior programming knowledge and familiarity with the Godot engine.
 
-A way to look at Godot is that the game engine is a part of a game development envoirment.
+When considering interactivity and rapid development, both environments perform well, as shown in Table~\ref{tab:tableComparisonSummary}.
+Scratch allows learners to construct and test programs immediately without setup, while Orchestrator provides instant feedback within the game environment.
+However, Orchestrator’s dependence on a scene context limits its ability to support isolated experimentation.
+
+Both languages support problem decomposition and modularization, satisfying the \textit{“bite-sized chunks”} criterion.
+As indicated in Table~\ref{tab:tableComparisonSummary}, Scratch achieves this through sprites and custom blocks, while Orchestrator provides more advanced structuring via functions, scripts, and scene hierarchies.
+
+In terms of correctness, Orchestrator provides stronger support through type checking and prevention of invalid connections, whereas Scratch lacks type enforcement and detailed error feedback.
+However, this support is still insufficient to fully satisfy the \textit{“Promotes writing correct programs”} criterion, as reflected in Table~\ref{tab:tableComparisonSummary}.
+
+
+The two environments differ significantly in extensibility, real-world applicability, and professional relevance.
+Orchestrator satisfies criteria such as \textit{“Is extensible”}, \textit{“Not only used in education”}, and \textit{“Is reliable and efficient”}, reflecting its integration within a professional development environment.
+Scratch, as shown in Table~\ref{tab:tableComparisonSummary}, prioritizes accessibility and educational usability over industrial applicability.
+
+A way to look at Godot is that the game engine is a part of a game development environment.
 You would want to use other programs to create assets and then port them over to Godot.
-Where as Scratch is a full game development envoirment, it does this by providing the tools for sprite, background and sound creation and editing.
+Where as Scratch is a full game development environment, it does this by providing the tools for sprite, background and sound creation and editing.
 
 When progressing to more advanced tools using a visual programming language **could** be more limiting than helpful.
 Of the two languages Orchestrator is more suited teaching these more advanced concepts.
 Because that Orchestrator is a plugin, disabling the plugin is an option, and the user would already be familiar with the keywords and features of Godot.
-In Scratch’s case the user would need to pick a new game engine, and not be as well suited, for example Scratch does not have vectors, it does have x and y, but not a datatype that holds both, “every” game engine uses vectors.
+In Scratch’s case the user would need to pick a new game engine, and not be as well suited, for example Scratch does not have vectors, it does have x and y, but not a datatype that holds both, most modern game engines rely on vector-based datastructures.
 And other game engine won’t have the same level of abstraction as Scratch.
+
+
+
 
 \subsection{Surveys}
 The study included both a pre- and a post-survey to determine the students’ assessment of their programming abilities.
@@ -255,9 +410,18 @@ The pre-survey was carried out before the workshop to determine the students’ 
 Using a Likert scale students could indicate whether they agree or disagree with statements like “I have a lot of experience in writing computer programs”, “I have a lot of experience with visual programming languages (e.g., Scratch)”, or “I can confidently explain how events handling can be implemented in computer games”.
 Note the focus on computer games in the last example.
 Because we used computer games to teach software design principles, we decided to go for more games-related statements instead of generic programming-related statements.
-We deem this approach defendable, as game development has served as proxy for teaching programming principles in other research projects [Mathrani, 2016][Papadakis, 2020].
+We deem this approach defendable, as game development has served as proxy for teaching programming principles in other research projects\cite{mathrani_playit_2016,papadakis_evaluating_2020}.
 
-A corresponding post-survey, with primarily the same questions, was performed after the workshop. Its goal was to capture the workshop’s effect on self-assessing their software design skills. Concretely, it was used to identify differences between Scratch and Godot Orchestrator teaching software design principles. Compared to the pre-survey, the post-survey was enriched by additional statements, to receive feedback on the usability of both tools. Those statements were phrased like “The visual programming language helped me to understand how my game saves and updates data”. Similarly to the pre-survey, statements were mapped to the software design concepts we wanted to convey during our workshop, as defined in the previous section. The surveys were conducted anonymously, however it was ensured that pre- and post-survey answers could be mapped to the same identifier. As recommend in [Nemoto \& Beglar, 2013], other data collection methods (multiple-choice test, artifact evaluation) have been added, to get a more complete picture of the research subject.
+
+A corresponding post-survey, with primarily the same questions, was performed after the workshop.
+Its goal was to capture the workshop's effect on self-assessing their software design skills.
+Concretely, it was used to identify differences between Scratch and Godot Orchestrator teaching software design principles.
+Compared to the pre-survey, the post-survey was enriched by additional statements, to receive feedback on the usability of both tools.
+Those statements were phrased like “The visual programming language helped me to understand how my game saves and updates data”.
+Similarly to the pre-survey, statements were mapped to the software design concepts we wanted to convey during our workshop, as defined in the previous section.
+The surveys were conducted anonymously, however it was ensured that pre- and post-survey answers could be mapped to the same identifier.
+As recommend in\cite{nemoto_developing_2013}, other data collection methods (multiple-choice test, artifact evaluation) have been added, to get a more complete picture of the research subject.
+
 
 The question for both surveys were designed with students in mind, which would have at least a basic understanding of programming and related concepts like variables and control structures.
 According to the project focus on young learners, we expected to teach either middle school or young high school students.
@@ -320,11 +484,11 @@ The other questions were designed in a similar way, while addressing other progr
 	      What is the best way to structure your game?
 	      \begin{enumerate}[label=\Alph*.]
 		      \item Copy the same movement-logic into every enemy.
-		      \item Make one shared enemy behavior and use it for all enemies.
-		      \item Place all enemy logic into a very large code block.
-		      \item I don't know.
-	      \end{enumerate}
-	      \textbf{Correct answer: B}
+              \item Make one shared enemy behavior and use it for all enemies.
+              \item Place all enemy logic into a very large code block.
+              \item I don't know.
+    \end{enumerate}
+    \textbf{Correct answer: B}
 \end{enumerate}
 
 The overall idea was to create questions that would strike an appropriate difficulty, while also mapping to the concepts we wanted to convey: modularity, instantiation, state management and event handling.
@@ -372,6 +536,6 @@ In the best case, we would see students use events to decouple components from e
 
 To evaluate each software design principle, we came up with the following scales:
 \begin{itemize}
-	\item Frequency: Always, Usually, Often, Sometimes, Never
-	\item Quality: Appropriate, Somewhat Appropriate, Inappropriate
+    \item Frequency: Always, Usually, Often, Sometimes, Never
+    \item Quality: Appropriate, Somewhat Appropriate, Inappropriate
 \end{itemize}
