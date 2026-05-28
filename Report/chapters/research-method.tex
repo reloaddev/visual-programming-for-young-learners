@@ -105,12 +105,11 @@ Scratch can be used to teach following programming concepts
 
 
 \begin{itemize}
-	\item Modularity/Functions - There is the block category called "Custom blocks" where users have the ability to create custom block/function.
-	\item Instantiation - Instantiation can be done with the "clone" blocks. There is a block for creating the functionality when a sprite starts as a clone. And there is a block to create a clone of a sprite. Any sprite can create a clone of another sprite. 
-	\item Event handling - Events and their handling is done with the blocks “Broadcast” and “Receive”. Broadcast sends a message out to anyone listing for it, and will execute code on receive. Other kind of events can happen and trigger on other blocks like “touching”, a way to execute code when two sprites are colliding
-	\item State management - Statemanagement is possible in Stracth with right combination of blocks.
+    \item Modularity/Functions - There is the block category called "Custom blocks" where users have the ability to create custom block/function.
+    \item Instantiation - Instantiation can be done with the "clone" blocks. There is a block for creating the functionality when a sprite starts as a clone. And there is a block to create a clone of a sprite. Any sprite can create a clone of another sprite.
+    \item Event handling - Events and their handling is done with the blocks “Broadcast” and “Receive”. Broadcast sends a message out to anyone listing for it, and will execute code on receive. Other kind of events can happen and trigger on other blocks like “touching”, a way to execute code when two sprites are colliding
+    \item State management - Statemanagement is possible in Stracth with right combination of blocks.
 \end{itemize}
-
 
 \subsubsection{Godot Orchestrator}
 Godot Orchestrator is a node-based visual scripting language designed for seamless integration into Godot's workflow.
@@ -206,17 +205,22 @@ As a language designed for a full game engine, Orchestrator can implement all th
 
 \begin{itemize}
 
+    \item \textbf{Modularity – Organizing reusable logic into callable blocks}
+    Orchestrator treats functions as first-class node graphs.
+    Learners create custom function nodes, define input parameters as visual pins, and construct logic by connecting nodes.
+    This representation makes relationships between inputs, logic, and outputs clear.
+    However, function overloading is not supported, and recursive functions can be difficult to visualize.
     \item \textbf{Instantiation – Creating and spawning game objects dynamically within scenes}
     Orchestrator handles instantiation through dedicated nodes that load and create scene instances at runtime.
     Learners connect an \texttt{Instantiate Scene} node, specify the scene path, optionally pass constructor parameters through input pins, and receive the instantiated object as output.
     While this makes the concept of instantiation visible, the underlying process remains abstracted.
     The node-based approach makes the creation process explicit and visual, but complex patterns such as object pooling or batched instantiation can become verbose.
 
-    \item \textbf{Functions – Organizing reusable logic into callable blocks}
-    Orchestrator treats functions as first-class node graphs.
-    Learners create custom function nodes, define input parameters as visual pins, and construct logic by connecting nodes.
-    This representation makes relationships between inputs, logic, and outputs clear.
-    However, function overloading is not supported, and recursive functions can be difficult to visualize.
+    \item \textbf{Event Handling – Responding to input, collisions, and signals}
+    Orchestrator integrates with Godot’s signal system through event nodes.
+    When a signal is emitted (e.g., input or collision), a corresponding node is triggered.
+    Learners connect input nodes (e.g., \texttt{Input Action Pressed}) directly to logic, making cause-and-effect relationships clear.
+    However, handling multiple overlapping events can result in complex and difficult-to-read node graphs.
 
     \item \textbf{State Management – Tracking and updating object properties}
     State is managed through member variables that persist within the script node.
@@ -225,11 +229,6 @@ As a language designed for a full game engine, Orchestrator can implement all th
     State changes are explicit, improving traceability, but can lead to large and complex node graphs when many variables are involved.
     State machines can be implemented using boolean variables, similar to textual programming languages.
 
-    \item \textbf{Event Handling – Responding to input, collisions, and signals}
-    Orchestrator integrates with Godot’s signal system through event nodes.
-    When a signal is emitted (e.g., input or collision), a corresponding node is triggered.
-    Learners connect input nodes (e.g., \texttt{Input Action Pressed}) directly to logic, making cause-and-effect relationships clear.
-    However, handling multiple overlapping events can result in complex and difficult-to-read node graphs.
 
 \end{itemize}
 
@@ -237,32 +236,32 @@ As a language designed for a full game engine, Orchestrator can implement all th
 
 
 \begin{table}[!htbp]
-	\centering
-	\resizebox{\columnwidth}{!}{%
-		\begin{tabular}{|p{7cm}|c|c|}
-			\hline
-			\textbf{Criteria}                                  & \textbf{Scratch} & \textbf{Godot Orchestrator} \\
-			\hline
-			Suitable for teaching                              & X                &                             \\
-			Can be used to apply physical analogies            & X                & X                           \\
-			Offers a general framework                         & X                & X                           \\
-			Promotes a design-driven approach                  &                  & X                           \\
-			\hline
-			Interactive and facilitates rapid code development & X                & X                           \\
-			Provides a seamless development environment        & X                & X                           \\
-			\hline
-			Has a supportive user community                    & X                & X                           \\
-			Is consistently supported across environments      & X                & X                           \\
-			Is freely and easily available                     & X                & X                           \\
-			Is supported with good teaching material           & X                &                             \\
-			\hline
-			Not only used in education                         &                  & X                           \\
-			\hline
-			Concept Coverage                                   & X                & X                           \\
-			\hline
-		\end{tabular}
-	}
-	\caption{Comparison of Scratch and Godot Orchestrator using the seventeen criteria}\label{tab:tableComparisonSummary}
+    \centering
+    \resizebox{\columnwidth}{!}{%
+        \begin{tabular}{|p{7cm}|c|c|}
+            \hline
+            \textbf{Criteria}                               & \textbf{Scratch} & \textbf{Godot Orchestrator} \\
+            \hline
+            Suitable for teaching                              & X                &                             \\
+            Can be used to apply physical analogies            & X                & X                           \\
+            Offers a general framework                         & X                & X                           \\
+            Promotes a design-driven approach                  &                  & X                           \\
+            \hline
+            Interactive and facilitates rapid code development & X                & X                           \\
+            Provides a seamless development environment        & X                & X                           \\
+            \hline
+            Has a supportive user community                    & X                & X                           \\
+            Is consistently supported across environments      & X                & X                           \\
+            Is freely and easily available                     & X                & X                           \\
+            Is supported with good teaching material           & X                &                             \\
+            \hline
+            Not only used in education                         &                  & X                           \\
+            \hline
+            Concept Coverage                                   & X                & X                           \\
+            \hline
+        \end{tabular}
+    }
+    \caption{Comparison of Scratch and Godot Orchestrator using the seventeen criteria}\label{tab:tableComparisonSummary}
 \end{table}
 
 
