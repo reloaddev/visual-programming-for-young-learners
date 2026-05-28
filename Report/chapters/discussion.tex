@@ -13,18 +13,18 @@ programming.
 The language is optimized for being user friendly and
 comes with a fast browser-based game engine that makes it possible
 for the learner to quickly see the results of their code and iterate
-on it.
+on it. In terms of our research question, Scratch is often used to teach young learners the very basics of programming, such as loops and simple algorithms. 
 The block-based structure is proven to be intuitive and
 children learn to use it much faster than they do traditional
 programming languages like Java\cite{resnick_scratch_2009, weintrop_block_2015}.
 However, it has also been speculated that the
 children can learn bad habits and get wrong ideas about algorithms,
-as they get used to the limited options of Scratch\cite{weintrop_block_2015}.
+as they get used to the limited options of Scratch\cite{weintrop_block_2015}. In other words, the features that make the language ideal for teaching simple concepts, may become actively detrimental when it comes to teaching more advanced software design concepts.
 Writing code in
 block-based languages has also been shown to execute slower than in
 text-based ones, which for that reason are preferred for implementing
-larger programs \cite{weintrop_block_2015}. Thus, students may be encouraged to start writing code in
-Scratch, but will then transition to a text-based language to learn
+larger programs \cite{weintrop_block_2015}. To our knowledge, there exists no block-based language used for commercial or large scale programming. Thus, students may be encouraged to start writing code in
+Scratch, but will later transition to a text-based language to learn
 more complicated concepts, indicating that Scratch is not suitable
 for this.
 
@@ -34,12 +34,12 @@ In fact,
 three widely used commercial game engines (Godot, Unity, and
 Unreal Engine 5)\footnote{https://godotengine.org/} \footnote{https://unity.com//} \footnote{https://www.unrealengine.com/} come pre-installed with a node-based editor for one or more of these purposes.
 Thus, we assumed that node-based editors
-would be better for complex structures and would be more suitable for
-teaching architechture.
+would be better suited for teaching the more complex design concepts that Scratch is not optimized for. 
+
 For writing code, the most advanced language
 we identified was Blueprints for Unreal Engine 5.
-This node-based language is integrated with the engine to the point that even game
-programmers will be expected to use it to implement in-game behavior.
+This node-based language is integrated with the engine to the point that even professional game
+programmers will be expected to use it to implement in-game behavior. However, we did not have access to the kind of hardware capable of running that engine. As a result we instead used Godot Orchestrator, which is a node-based code plugin made for the game engine Godot. Godot is also a modern, state of the art game engine suitable for the development of commercial games. Crucially, it has much more generous hardware requirements, and for projects like the one used in the workshop the compilation time is extremely low, enabling fast iterations just like Scratch. 
 
 Both visual programming languages have the same drawback of visual
 clutter.
