@@ -7,10 +7,10 @@ Both languages are incorporated into game engines by the developers, meaning tha
 Students in each group were asked to build a game using the language, which incorporated the following software development concepts:
 
 \begin{itemize}
-    \item Instantiation
-    \item Modularity
-    \item State Management
-    \item Event Handling
+	\item Instantiation
+	\item Modularity
+	\item State Management
+	\item Event Handling
 \end{itemize}
 
 These concepts were chosen as they serve as ways to introduce topics commonly taught during the first year of Software engineering at university, whilst also being commonplace in game development.
@@ -105,10 +105,10 @@ Scratch can be used to teach following programming concepts
 
 
 \begin{itemize}
-    \item Modularity/Functions - There is the block category called "Custom blocks" where users have the ability to create custom block/function.
-    \item Instantiation - Instantiation can be done with the "clone" blocks. There is a block for creating the functionality when a sprite starts as a clone. And there is a block to create a clone of a sprite. Any sprite can create a clone of another sprite.
-    \item Event handling - Events and their handling is done with the blocks “Broadcast” and “Receive”. Broadcast sends a message out to anyone listing for it, and will execute code on receive. Other kind of events can happen and trigger on other blocks like “touching”, a way to execute code when two sprites are colliding
-    \item State management - Statemanagement is possible in Stracth with right combination of blocks.
+	\item Modularity/Functions - There is the block category called "Custom blocks" where users have the ability to create custom block/function.
+	\item Instantiation - Instantiation can be done with the "clone" blocks. There is a block for creating the functionality when a sprite starts as a clone. And there is a block to create a clone of a sprite. Any sprite can create a clone of another sprite.
+	\item Event handling - Events and their handling is done with the blocks “Broadcast” and “Receive”. Broadcast sends a message out to anyone listing for it, and will execute code on receive. Other kind of events can happen and trigger on other blocks like “touching”, a way to execute code when two sprites are colliding
+	\item State management - Statemanagement is possible in Stracth with right combination of blocks.
 \end{itemize}
 
 \subsubsection{Godot Orchestrator}
@@ -205,29 +205,29 @@ As a language designed for a full game engine, Orchestrator can implement all th
 
 \begin{itemize}
 
-    \item \textbf{Modularity – Organizing reusable logic into callable blocks}
-    Orchestrator treats functions as first-class node graphs.
-    Learners create custom function nodes, define input parameters as visual pins, and construct logic by connecting nodes.
-    This representation makes relationships between inputs, logic, and outputs clear.
-    However, function overloading is not supported, and recursive functions can be difficult to visualize.
-    \item \textbf{Instantiation – Creating and spawning game objects dynamically within scenes}
-    Orchestrator handles instantiation through dedicated nodes that load and create scene instances at runtime.
-    Learners connect an \texttt{Instantiate Scene} node, specify the scene path, optionally pass constructor parameters through input pins, and receive the instantiated object as output.
-    While this makes the concept of instantiation visible, the underlying process remains abstracted.
-    The node-based approach makes the creation process explicit and visual, but complex patterns such as object pooling or batched instantiation can become verbose.
+	\item \textbf{Modularity – Organizing reusable logic into callable blocks}
+	      Orchestrator treats functions as first-class node graphs.
+	      Learners create custom function nodes, define input parameters as visual pins, and construct logic by connecting nodes.
+	      This representation makes relationships between inputs, logic, and outputs clear.
+	      However, function overloading is not supported, and recursive functions can be difficult to visualize.
+	\item \textbf{Instantiation – Creating and spawning game objects dynamically within scenes}
+	      Orchestrator handles instantiation through dedicated nodes that load and create scene instances at runtime.
+	      Learners connect an \texttt{Instantiate Scene} node, specify the scene path, optionally pass constructor parameters through input pins, and receive the instantiated object as output.
+	      While this makes the concept of instantiation visible, the underlying process remains abstracted.
+	      The node-based approach makes the creation process explicit and visual, but complex patterns such as object pooling or batched instantiation can become verbose.
 
-    \item \textbf{Event Handling – Responding to input, collisions, and signals}
-    Orchestrator integrates with Godot’s signal system through event nodes.
-    When a signal is emitted (e.g., input or collision), a corresponding node is triggered.
-    Learners connect input nodes (e.g., \texttt{Input Action Pressed}) directly to logic, making cause-and-effect relationships clear.
-    However, handling multiple overlapping events can result in complex and difficult-to-read node graphs.
+	\item \textbf{Event Handling – Responding to input, collisions, and signals}
+	      Orchestrator integrates with Godot’s signal system through event nodes.
+	      When a signal is emitted (e.g., input or collision), a corresponding node is triggered.
+	      Learners connect input nodes (e.g., \texttt{Input Action Pressed}) directly to logic, making cause-and-effect relationships clear.
+	      However, handling multiple overlapping events can result in complex and difficult-to-read node graphs.
 
-    \item \textbf{State Management – Tracking and updating object properties}
-    State is managed through member variables that persist within the script node.
-    Learners use \texttt{Set Property} and \texttt{Get Property} nodes to modify and access values.
-    The system supports various data types, including primitives, vectors, arrays, and dictionaries.
-    State changes are explicit, improving traceability, but can lead to large and complex node graphs when many variables are involved.
-    State machines can be implemented using boolean variables, similar to textual programming languages.
+	\item \textbf{State Management – Tracking and updating object properties}
+	      State is managed through member variables that persist within the script node.
+	      Learners use \texttt{Set Property} and \texttt{Get Property} nodes to modify and access values.
+	      The system supports various data types, including primitives, vectors, arrays, and dictionaries.
+	      State changes are explicit, improving traceability, but can lead to large and complex node graphs when many variables are involved.
+	      State machines can be implemented using boolean variables, similar to textual programming languages.
 
 
 \end{itemize}
@@ -236,36 +236,33 @@ As a language designed for a full game engine, Orchestrator can implement all th
 
 
 \begin{table}[!htbp]
-    \centering
-    \resizebox{\columnwidth}{!}{%
-        \begin{tabular}{|p{7cm}|c|c|}
-            \hline
-            \textbf{Criteria}                               & \textbf{Scratch} & \textbf{Godot Orchestrator} \\
-            \hline
-            Suitable for teaching                              & X                &                             \\
-            Can be used to apply physical analogies            & X                & X                           \\
-            Offers a general framework                         & X                & X                           \\
-            Promotes a design-driven approach                  &                  & X                           \\
-            \hline
-            Interactive and facilitates rapid code development & X                & X                           \\
-            Provides a seamless development environment        & X                & X                           \\
-            \hline
-            Has a supportive user community                    & X                & X                           \\
-            Is consistently supported across environments      & X                & X                           \\
-            Is freely and easily available                     & X                & X                           \\
-            Is supported with good teaching material           & X                &                             \\
-            \hline
-            Not only used in education                         &                  & X                           \\
-            \hline
-            Concept Coverage                                   & X                & X                           \\
-            \hline
-        \end{tabular}
-    }
-    \caption{Comparison of Scratch and Godot Orchestrator using the seventeen criteria}\label{tab:tableComparisonSummary}
+	\centering
+	\resizebox{\columnwidth}{!}{%
+		\begin{tabular}{|p{7cm}|c|c|}
+			\hline
+			\textbf{Criteria}                                  & \textbf{Scratch} & \textbf{Godot Orchestrator} \\
+			\hline
+			Suitable for teaching                              & X                &                             \\
+			Can be used to apply physical analogies            & X                & X                           \\
+			Offers a general framework                         & X                & X                           \\
+			Promotes a design-driven approach                  &                  & X                           \\
+			\hline
+			Interactive and facilitates rapid code development & X                & X                           \\
+			Provides a seamless development environment        & X                & X                           \\
+			\hline
+			Has a supportive user community                    & X                & X                           \\
+			Is consistently supported across environments      & X                & X                           \\
+			Is freely and easily available                     & X                & X                           \\
+			Is supported with good teaching material           & X                &                             \\
+			\hline
+			Not only used in education                         &                  & X                           \\
+			\hline
+			Concept Coverage                                   & X                & X                           \\
+			\hline
+		\end{tabular}
+	}
+	\caption{Comparison of Scratch and Godot Orchestrator using the seventeen criteria}\label{tab:tableComparisonSummary}
 \end{table}
-
-
-
 
 Scratch and Godot Orchestrator employ distinct visual programming paradigms: Scratch uses block-based, while Orchestrator implements a node-based.
 Scratch has a high level of abstraction which makes it good for beginners while Godot Orchestrator being a plugin for a professional grade game engine makes it better for more complex concepts.
@@ -301,35 +298,35 @@ Although it provides \texttt{x} and \texttt{y} values, it does not include a com
 And other game engine won’t have the same level of abstraction as Scratch.
 
 \subsection{Surveys}\label{subsec:surveys}
-The study included both a pre- and a post-survey to determine the students’ assessment of their programming abilities.
-The pre-survey was carried out before the workshop to determine the students’ experience with programming and software design principles.
-Using a Likert scale students could indicate whether they agree or disagree with statements like “I have a lot of experience in writing computer programs”, “I have a lot of experience with visual programming languages (e.g., Scratch)”, or “I can confidently explain how events handling can be implemented in computer games”.
-Note the focus on computer games in the last example.
-Because we used computer games to teach software design principles, we decided to go for more games-related statements instead of generic programming-related statements.
-We deem this approach defendable, as game development has served as proxy for teaching programming principles in other research projects\cite{mathrani_playit_2016,papadakis_evaluating_2020}.
-
+The study included both a pre- and a post-survey to determine the students' assessment of their programming abilities.
+The pre-survey was carried out before the workshop to determine the students' experience with programming and software design principles.
+Using a Likert scale students could indicate whether they agree or disagree with statements like “I have a lot of experience in writing
+computer programs”, “I have a lot of experience with visual programming languages (e.g., Scratch)”, or “I can confidently explain how events
+handling can be implemented in computer games”. Note the focus on computer games in the last example. Because we used computer games to teach
+software design principles, we decided to go for more games-related statements instead of generic programming-related statements. We deem this
+approach defendable, as game development has served as proxy for teaching programming principles in other research projects\cite{mathrani_playit_2016,papadakis_evaluating_2020}.
 
 A corresponding post-survey, with primarily the same questions, was performed after the workshop.
 Its goal was to capture the workshop's effect on self-assessing their software design skills.
 Concretely, it was used to identify differences between Scratch and Godot Orchestrator teaching software design principles.
 Compared to the pre-survey, the post-survey was enriched by additional statements, to receive feedback on the usability of both tools.
 Those statements were phrased like “The visual programming language helped me to understand how my game saves and updates data”.
-Similarly to the pre-survey, statements were mapped to the software design concepts we wanted to convey during our workshop, as defined in the previous section.
-The surveys were conducted anonymously, however it was ensured that pre- and post-survey answers could be mapped to the same identifier.
-As recommend in\cite{nemoto_developing_2013}, other data collection methods (multiple-choice test, code evaluation) have been added, to get a more complete picture of the research subject.
+Similarly to the pre-survey, statements were mapped to the software design concepts we wanted to convey during our workshop, as defined
+in the previous section. The surveys were conducted anonymously, however it was ensured that pre- and post-survey answers could be mapped
+to the same identifier. As recommend in\cite{nemoto_developing_2013}, other data collection methods (multiple-choice test, code evaluation)
+have been added, to get a more complete picture of the research subject.
 
-
-The question for both surveys were designed with students in mind, which would have at least a basic understanding of programming and related concepts like variables and control structures.
-According to the project focus on young learners, we expected to teach either middle school or young high school students.
-Thus, one challenge was to find a tone and wording that would be understandable, yet meaningful enough to describe concepts like modularity or instantiation.
-A survey statement regarding modularity was phrased like this: “I can confidently explain, how a game can be split into several parts”.
-While it does not mention the concept of modularity explicitly, it still conveys a similar idea using simpler language.
-Other statements used the concept’s name, if we deemed it understandable enough: “I can confidently explain, how programs react to events”.
-As Berends~\cite{berends_survey_2006} stresses, creating questions that address the actual research goal is essential.
-Therefore, we tried to focus the survey questions on the student’s understanding of the earlier presented software design principles.
-To achieve comparability, we included those questions both in pre- and post-survey.
-Apart from asking about the software design principles, pre- and post-survey differed in the remaining question.
-Whereas the pre-survey collected data regarding the student’s programming experience, the post-survey included more general questions regarding usability of the respective visual programming languages.
+The question for both surveys were designed with students in mind, which would have at least a basic understanding of programming and related
+concepts like variables and control structures. According to the project focus on young learners, we expected to teach either middle school or
+young high school students. Thus, one challenge was to find a tone and wording that would be understandable, yet meaningful enough to describe
+concepts like modularity or instantiation. A survey statement regarding modularity was phrased like this: “I can confidently explain, how a
+game can be split into several parts”. While it does not mention the concept of modularity explicitly, it still conveys a similar idea using
+simpler language. Other statements used the concept's name, if we deemed it understandable enough: “I can confidently explain, how programs
+react to events”. As Berends~\cite{berends_survey_2006} stresses, creating questions that address the actual research goal is essential.
+Therefore, we tried to focus the survey questions on the student's understanding of the earlier presented software design principles.
+To achieve comparability, we included those questions both in pre- and post-survey. Apart from asking about the software design principles,
+pre- and post-survey differed in the remaining question. Whereas the pre-survey collected data regarding the student's programming experience,
+the post-survey included more general questions regarding usability of the respective visual programming languages.
 
 \subsection{Educational Workshop}\label{subsec:educational-workshop}
 The workshop started with us explaining the above concepts and introducing the language the group would be using.
@@ -341,8 +338,6 @@ They also received a description of the functionality their code was expected to
 As instructors, we stood by to help the students in case they got stuck.
 This way, the students would be able to focus all their attention on writing the code, rather than understanding every aspect of the engine.
 This design was chosen to account for the limited amount of available time, whilst maximizing the focus on software engineering.
-The main downside of this method is that it does not emphasize creativity.
-Following instructions is definitely less creative than turning your own idea into a video game.
 
 The game is a simple shooter, in which the player is being chased by an ever-increasing amount of ghosts.
 The player can shoot the ghosts to gain points, but the game will end if a ghost hits the player.
@@ -356,7 +351,7 @@ Functions are used to organize the code and make it reusable without having to w
 Based on our testing with visual languages, we determined this to be even more important in these languages than in text-based ones.
 Visual code easily covers the screen and becomes unmanageable, so organizing code into functions is crucial to be able to read it.
 Both game engines allow usage of events to enable communication between scripts, so it makes sense to teach that as well.
-In our game events were for example used to let ghosts know if they were hit by a bullet or to react to the player’s key input (event handling).
+In our game events were for example used to let ghosts know if they were hit by a bullet or to react to the player's key input (event handling).
 Hence, all the earlier mentioned software design concepts could be found in our game.
 The instructions, that came with the game design document and that students were encouraged to follow, tried to expose the students to problems, which could be solved by using one of the concepts.
 However, the students were not obliged to use these concepts.
@@ -378,15 +373,15 @@ One of the questions is shown below.
 The other questions were designed in a similar way, while addressing other programming concepts too.
 
 \begin{enumerate}
-    \item You are making a game with 5 enemy types, which all move in the same way.
-    What is the best way to structure your game?
-    \begin{enumerate}[label=\Alph*.]
+	\item You are making a game with 5 enemy types, which all move in the same way.
+	      What is the best way to structure your game?
+	      \begin{enumerate}[label=\Alph*.]
 		      \item Copy the same movement-logic into every enemy.
-              \item Make one shared enemy behavior and use it for all enemies.
-              \item Place all enemy logic into a very large code block.
-              \item I don't know.
-    \end{enumerate}
-    \textbf{Correct answer: B}
+		      \item Make one shared enemy behavior and use it for all enemies.
+		      \item Place all enemy logic into a very large code block.
+		      \item I don't know.
+	      \end{enumerate}
+	      \textbf{Correct answer: B}
 \end{enumerate}
 
 The overall idea was to create questions that would strike an appropriate difficulty, while also mapping to
@@ -408,6 +403,6 @@ We came up with the
 following scale to assess frequency and quality of implementation of all four design concepts.
 
 \begin{itemize}
-    \item Frequency: Always, Usually, Often, Sometimes, Never
-    \item Quality: Appropriate, Somewhat Appropriate, Inappropriate
+	\item Frequency: Always, Usually, Often, Sometimes, Never
+	\item Quality: Appropriate, Somewhat Appropriate, Inappropriate
 \end{itemize}
