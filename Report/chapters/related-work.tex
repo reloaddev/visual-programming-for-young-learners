@@ -8,32 +8,50 @@ When people think of software engineering, they often focus on programming, but 
 \subsubsection{Programming Education}
 
 
-Though programing is not the main focus of software engineering it serves as the entry point to software engineering, where students learn fundamental concepts that later extend into more advanced topics such as software design and system architecture.
-
+Though programming is not the main focus of software engineering it serves as the entry point, where students learn fundamental concepts that later extend into more advanced topics such as software design and system architecture.
 
 Because programming serves as the entry point to software engineering, the choice of programming language is important, as languages with a steep learning curve may discourage beginners from engaging with the field.
 
-
-The specific language to use for this entry point has been a history of debate\cite{villagomez-palacios_bridging_2025}, as language preference is subject to personal preference and efficiency varies between learners.
-George Milbrandt\cite{mannila_objective_2006} suggested these criteria for language selection for beginners: it should be easy to use, have a structured design with one-entry/one-exit flow, offer powerful computing capacity while maintaining simple syntax, support variable declaration and expressive, meaningful variable names, provide easy input/output and output formatting, give immediate feedback, and include good diagnostic tools for testing and debugging.
-Although these are good criteria for a language to have its leaves very little tooling for comparing different languages and their capacity to teach.
+The specific language to use for this entry point has been a history of debate~\cite{villagomez-palacios_bridging_2025}, as language preference is subject to personal preference and efficiency varies between learners.
+Because these preferences are subjective, it is often difficult to objectively compare programming languages and their suitability for teaching.
 This is something that Mannila and Raadt have sought to rectify in their paper \textit{ "An Objective Comparison of Languages for Teaching Introductory Programming"}\cite{mannila_objective_2006}, wherein they compare different programming language to find the one which is the best for teaching beginners.
 They have collected 17 different criteria drawn from the design decisions made by creators of languages that are considered ``teaching languages''.
+These criteria are used as a methodology to evaluate the suitability of programming languages for teaching.
+More importantly, the language should enable students to focus on fundamental programming concepts, rather than being hindered by syntactic complexity.
+Their work also highlights that introductory programming languages should support problem decomposition, modular thinking, and gradual progression from simple to more complex constructs.
 
-\subsubsection{Challenges in Learning Software Engineering}
+One of the problems in teaching software engineering through programming is the so-called “double burden”, where learners are required to simultaneously understand problem-solving logic and the syntax of a programming language.
+This combination introduces a significant cognitive load, particularly for beginners, who may struggle to express simple ideas in syntactically correct programs~\cite{villagomez-palacios_bridging_2025}.
 
-\subsubsection{Computational Thinking and Conceptual Learning}
+A key goal of introductory programming education is therefore not mastery of a specific language, but the development of transferable problem-solving skills and an understanding of core programming concepts.
 
-\subsubsection{Game-Based Learning}
+\subsubsection{Teaching Computational Thinking}
+
+Computational thinking (CT) is widely regarded as a fundamental skill underlying effective software engineering and general problem-solving.
+
+The ever-increasing technological development have caused an increasing integration of computing curriculum in K-12 education, and has led to a growing interest in how CT can be effectively taught to young learners\cite{grover_assessing_2014}.
+Deepak Singh Rana states that CT encompasses key processes such as problem decomposition, pattern recognition, abstraction, and algorithm design, enabling learners to approach complex problems in a structured and systematic way~\cite{rana_impact_2022}.
+
+An inherent challenge in teaching programming to young learners is that they may follow instructions too closely or receive excessive guidance during the learning process.
+This can result in solutions that appear correct, while the learners’ actual understanding of the underlying concepts remains limited~\cite{grover_assessing_2014}.
+
+This suggests that instructional approaches focusing solely on step-by-step guidance may be insufficient for developing the deeper problem-solving mindset required for computational thinking.
+Instead, learners must engage with underlying concepts and actively construct their own understanding.
+
+
+
+One approach to introducing these concepts while avoiding the “double burden” associated with traditional textual programming is the use of visual programming environments, which allow learners to focus on logic and structure rather than syntactic details.
+Consequently, a variety of visual programming languages have been developed, each offering different approaches to representing program structure and execution.
 
 \subsection{Visual Programming Languages}
+
 Visual Programming Languages (VPL) differ from Textual Programming Languages (TPL) in, that instead of using a textual representation consisting of keywords and strings they make use of visual representations to assemble a program.
-Using visual representations is generally seen as a way to make programming more accessible to a broader audience, as learners are not required to learn syntax and semantics of a textual language first.
+Using visual representations is generally seen as a way to make programming more accessible to a broader audience, as learners are not required to learn syntax and semantics of a textual language first, and thereby overcome the “double burden” of standard textual programming.
 Visual programming languages are often designed in a way that only certain language constructs can be integrated, thus preventing faulty use of the language early.
 On the other hand, textual programming languages allow users to write basically anything.
 Syntax errors might be first caught at compilation time, or even worse at runtime, which makes tracing errors a hard task.
 
-One of the first steps towards visual programming languages was Logo, which was developed as a programming language for children [Papert].
+One of the first steps towards visual programming languages was Logo, which was developed as a programming language for children\cite{papert_mindstorms_1980}.
 The general idea of the language is to put children into a position, where it is not just being taught how to use a language, but where it can itself explore the world of programming.
 For instance, it might help children to understand that programming is not really about getting it right or wrong the first time, but to iteratively improve a program over time by running and debugging it.
 Logo makes use of turtle graphics to make it appealing to children.
@@ -43,7 +61,7 @@ Logo is considered one of the first attempts to make programming accessible to c
 Still, it is not a visual, but a textual programming language.
 
 <CHECK Pausch, 1995, Alice: Rapid Prototyping System for Virtual Reality>Alice, introduced in the year 2000, is another textual programming language leading up to the creation of “pure” visual programming languages.
-The language can be used to program a 3D animation environment [Cooper].
+The language can be used to program a 3D animation environment \cite{cooper_alice_2000}.
 Similar to Logo being built for children, Alice targets students by serving as an introduction to programming.
 It tries to address the problem, that some students are better prepared than others when entering their first programming course, e.g., in university.
 Therefore, its authors see it as an attempt to prepare students for learning programming concepts.
@@ -53,8 +71,7 @@ Students can debug their programs based on visual output.
 With 3D animation being a rather complex environment for programming novices, Alice provides a lot of built-in methods to manipulate objects and physics.
 Still, it teaches concepts of graphics, state and event handling.
 
-In 2007, Resnick et al.
-launched their visual programming language Scratch [Resnick].
+In 2007, Resnick et al. launched their visual programming language Scratch\cite{resnick_scratch_2009}.
 Compared to the two previously presented languages, Scratch does not rely on textual code snippets, but graphical programming blocks.
 Each block serves a purpose, e.g., hold a variable or check for a condition, and can be combined with other compatible blocks.
 This allows learners to try out many things, while being protected from syntax errors common in textual programming.
@@ -63,25 +80,58 @@ Further, the programming environment allows for a high degree of personalization
 Scratch projects can be shared with others, thus allowing new projects to re-use code from existing projects.
 The concept of re-use plays an important role in other programming languages too, where projects rely on libraries or frameworks to avoid having to program every functionality from scratch.
 
-While Scratch being pointed at children education, Snap! attempts to recycle Scratch’s core ideas and make it viable for non-major computer science education [Harvey \& Mönig]. It was initially developed as an extension to Scratch, which introduced functions to make use of recursion and the possibility to create lists of lists, enabling the construction of other data structures. In addition, Snap! can serve object-oriented programming allowing for the creation of class-like constructs and their instantiation as objects. Even inheritance becomes possible with Snap!. The creators of Snap! wanted avoid having separate languages for children and more mature learners, as this would split the community into two parts, where learners had to switch from to another language. Instead, they advocate for an approach where switching from Scratch to Snap! feel more like enabling some additional features to make the language more powerful.
+While Scratch being pointed at children education, `Snap!' attempts to recycle Scratch’s core ideas and make it viable for non-major computer science education\cite{harvey_bringing_2010}.
+It was initially developed as an extension to Scratch, which introduced functions to make use of recursion and the possibility to create lists of lists, enabling the construction of other data structures.
+In addition, Snap! can serve object-oriented programming allowing for the creation of class-like constructs and their instantiation as objects.
+Even inheritance becomes possible with Snap! The creators of Snap! wanted avoid having separate languages for children and more mature learners, as this would split the community into two parts, where learners had to switch from to another language.
+Instead, they advocate for an approach where switching from Scratch to Snap! feel more like enabling some additional features to make the language more powerful.
 
-The Greenfoot programming environment is another visual programming language, using and teaching Java [Kölling].
+The Greenfoot programming environment is another visual programming language, using and teaching Java\cite{kolling_greenfoot_2010}.
 The language can be used to create animations, and is intended to help students understand object-oriented programming.
 While it requires knowledge of Java to some degree, Greenfoot dramatically simplifies interaction with the language, by hiding boilerplate code and by allowing to create objects through a visual editor.
 The animation-related functionality is provided by Greenfoot, allowing students to focus on what they want to create instead of how to create it.
 Moreover, the Greenfoot editor always displays a hierarchy of classes that are part of the current scene, which helps to understand “the bigger picture”.
-Created behavior can be immediately tested in the graphical output window, where leaners can inspect objects.
+Created behavior can be immediately tested in the graphical output window, where learners can inspect objects.
 They can view their methods and execute them individually.
 Similar help exists for investigating object state, i.e. seeing the values of internal variables like in a debugger.
 In general, Greenfoot tries to ease the introduction to complex concepts like inheritance or information hiding by letting learners experience concrete examples first before giving a more abstract definition, while sparing them from having to learn complex syntax from the beginning.
 
-While other visual programming languages attempt to teach computational thinking through animation or game development, MIT App Inventor utilizes mobile app development as a teaching medium [Patton].
-Prebuilt visual elements (e.g. buttons, text elements) can be dragged into an an app, making it easy to the implement the app interface.
-Further, code blocks as in Scratch or Snap!
-can be used to implement more complex behavior.
+While other visual programming languages attempt to teach computational thinking through animation or game development, MIT App Inventor utilizes mobile app development as a teaching medium \cite{patton_mit_2019}.
+Prebuilt visual elements (e.g. buttons, text elements) can be dragged into an app, making it easy to the implement the app interface.
+Further, code blocks as in Scratch or Snap! can be used to implement more complex behavior.
 Similar to other VPLs, App Inventor’s target group is users that have not graduated from a computer science program.
 The focus lies on iteration and rapid prototyping.
 Also, App Inventor provides a WYSIWYG (What You See is What You Get) output window, which shows users how changing code affects the output app.
 A companion app, that users can install on their mobile phone, allows users to test their app on real devices.
 
-\subsection{Visual Programming Languages in Education}
+\subsection{Visual Programming or textual programming Languages in Education}
+
+With both visual and textual programming being introduced this raises the question of which approach is more effective for introductory programming education and the development of underlying conceptual understanding.
+
+As mentioned previously primary challenges in introductory programming is the “double burden” faced by novices, who must simultaneously learn problem-solving logic and the syntax of a programming language.
+Visual programming environments have been proposed as a solution to this issue, enabling a “logic-first, syntax-second” approach, where learners can focus on computational thinking before dealing with syntactic complexity.
+
+However, research comparing visual and textual programming languages suggests that there is no clear consensus on which approach is superior. 
+A systematic literature review by Noone and Mooney~\cite{noone_visual_2018} highlights that while visual programming languages can improve accessibility, engagement, and early conceptual understanding, but when times come for more complex topics it has a tendency to fall short.
+The widespread availability of visual programming environments, both online and as free downloadable tools, helps mitigate some of their limitations.
+These environments can serve as an effective introduction to programming concepts, particularly when followed by a structured transition to textual languages, for example through side-by-side comparisons.
+Additionally, their accessibility and interactive nature can increase motivation and improve retention, especially among younger learners~\cite{noone_visual_2018}.
+
+Similarly, Fernandes et al.~\cite{fernandes_blocks_2026} found that both block-based and text-based paradigms significantly improve students’ conceptual understanding, but differ in how learners approach programming tasks.
+While visual programming has often been theorised to be easier to use and less error-prone due to reduced syntactic complexity, empirical evidence does not always fully support this assumption.
+Fernandes et al. reported that students using block-based environments made more errors than those using text-based languages.
+
+As mentioned earlier visual scripting was theorized to be easier to use and less error-prone due to its more simple syntax, this however is not necessarily the case, in their study Fernandes et al. \cite{fernandes_blocks_2026} found that those using block-based coding made significantly more errors than those using text-based coding.
+Which they theories could be something to do with the ease by which visual programming tools are to use, where those using text has to take their time considering what they are writing.
+On the other hand the ease by which visual programs are written might be encouraging fast task completion/prototyping, leading to more errors but also a faster task completion.
+
+Furthermore, Fernandes et al.~\cite{fernandes_blocks_2026} conclude that both block-based and text-based programming environments have potential in teaching computational thinking, with neither approach being inherently superior.
+Instead, each paradigm appears to support different conceptual areas more effectively.
+For example, sequences are more clearly understood in text-based environments, whereas procedures are more effectively learned in block-based environments.
+
+While previous research has demonstrated the benefits of visual programming languages and computational thinking in introductory programming education, there remains limited work directly comparing different visual paradigms in the context of teaching software engineering concepts.
+In particular, the distinction between block-based and flow-based or node-based programming approaches has received relatively little attention.
+
+This study aims to address this gap by examining how different visual programming paradigms support the learning of key software engineering concepts, including modularity, instantiation, state management, and event handling.
+
+
