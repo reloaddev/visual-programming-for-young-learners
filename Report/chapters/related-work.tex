@@ -12,10 +12,10 @@ Though programming is not the main focus of software engineering it serves as th
 
 Because programming serves as the entry point to software engineering, the choice of programming language is important, as languages with a steep learning curve may discourage beginners from engaging with the field.
 
-The specific language to use for this entry point has been a history of debate~\cite{villagomez-palacios_bridging_2025}, as language preference is subject to personal preference and efficiency varies between learners. 
+The specific language to use for this entry point has been a history of debate~\cite{villagomez-palacios_bridging_2025}, as language preference is subject to personal preference and efficiency varies between learners.
 Because these preferences are subjective, it is often difficult to objectively compare programming languages and their suitability for teaching.
 This is something that Mannila and Raadt have sought to rectify in their paper \textit{ "An Objective Comparison of Languages for Teaching Introductory Programming"}\cite{mannila_objective_2006}, wherein they compare different programming language to find the one which is the best for teaching beginners.
-They have collected 17 different criteria drawn from the design decisions made by creators of languages that are considered ``teaching languages''. 
+They have collected 17 different criteria drawn from the design decisions made by creators of languages that are considered ``teaching languages''.
 These criteria are used as a methodology to evaluate the suitability of programming languages for teaching.
 More importantly, the language should enable students to focus on fundamental programming concepts, rather than being hindered by syntactic complexity.
 Their work also highlights that introductory programming languages should support problem decomposition, modular thinking, and gradual progression from simple to more complex constructs.
@@ -25,14 +25,13 @@ This combination introduces a significant cognitive load, particularly for begin
 
 A key goal of introductory programming education is therefore not mastery of a specific language, but the development of transferable problem-solving skills and an understanding of core programming concepts.
 
-
 \subsubsection{Teaching Computational Thinking}
 
 Computational thinking (CT) is widely regarded as a fundamental skill underlying effective software engineering and general problem-solving.
 
-The ever-increasing technological development have caused an increasing integration of computing curriculum in K-12 education, and  has led to a growing interest in how CT can be effectively taught to young learners\cite{grover_assessing_2014}.
+The ever-increasing technological development have caused an increasing integration of computing curriculum in K-12 education, and has led to a growing interest in how CT can be effectively taught to young learners\cite{grover_assessing_2014}.
 
-An inherent challenge in teaching programming to young learners is that they may follow instructions too closely or receive excessive guidance during the learning process. 
+An inherent challenge in teaching programming to young learners is that they may follow instructions too closely or receive excessive guidance during the learning process.
 This can result in solutions that appear correct, while the learners’ actual understanding of the underlying concepts remains limited~\cite{grover_assessing_2014}.
 
 This suggests that instructional approaches focusing solely on step-by-step guidance may be insufficient for developing the deeper problem-solving mindset required for computational thinking.
@@ -41,17 +40,12 @@ Instead, learners must engage with underlying concepts and actively construct th
 Deepak Singh Rana states that CT encompasses key processes such as problem decomposition, pattern recognition, abstraction, and algorithm design, enabling learners to approach complex problems in a structured and systematic way~\cite{rana_impact_2022}.
 
 
-
 One approach to introducing these concepts while avoiding the “double burden” associated with traditional textual programming is the use of visual programming environments, which allow learners to focus on logic and structure rather than syntactic details.
 Consequently, a variety of visual programming languages have been developed, each offering different approaches to representing program structure and execution.
 
-
-
-
-
 \subsection{Visual Programming Languages}
 
-Visual Programming Languages (VPL) differ from Textual Programming Languages (TPL) in, that instead of using a textual representation consisting of keywords and strings they make use of visual representations to assemble a program. 
+Visual Programming Languages (VPL) differ from Textual Programming Languages (TPL) in, that instead of using a textual representation consisting of keywords and strings they make use of visual representations to assemble a program.
 Using visual representations is generally seen as a way to make programming more accessible to a broader audience, as learners are not required to learn syntax and semantics of a textual language first, and thereby overcome the “double burden” of standard textual programming.
 Visual programming languages are often designed in a way that only certain language constructs can be integrated, thus preventing faulty use of the language early.
 On the other hand, textual programming languages allow users to write basically anything.
@@ -110,21 +104,31 @@ The focus lies on iteration and rapid prototyping.
 Also, App Inventor provides a WYSIWYG (What You See is What You Get) output window, which shows users how changing code affects the output app.
 A companion app, that users can install on their mobile phone, allows users to test their app on real devices.
 
-
 \subsection{Visual Programming or textual programming Languages in Education}
 
-
-With both visual and textual programming being introduced the obvious question remains which one is superior for an introduction to software engineering, and the inherent concept within.
+With both visual and textual programming being introduced this raises the question of which approach is more effective for introductory programming education and the development of underlying conceptual understanding.
 
 As mentioned previously primary challenges in introductory programming is the “double burden” faced by novices, who must simultaneously learn problem-solving logic and the syntax of a programming language.
 Visual programming environments have been proposed as a solution to this issue, enabling a “logic-first, syntax-second” approach, where learners can focus on computational thinking before dealing with syntactic complexity.
 
-Recent research comparing block-based and text-based programming environments further highlights the lack of consensus regarding the most effective approach for teaching beginners.
-Fernandes et al. \cite{fernandes_blocks_2026} found that both paradigms significantly improve students’ conceptual understanding, although they differ in how learners interact with programming tasks.
-Block-based environments tend to reduce syntactic barriers and increase speed, while text-based environments may encourage more reflective problem-solving. 
+However, research comparing visual and textual programming languages suggests that there is no clear consensus on which approach is superior. 
+A systematic literature review by Noone and Mooney~\cite{noone_visual_2018} highlights that while visual programming languages can improve accessibility, engagement, and early conceptual understanding, but when times come for more complex topics it has a tendency to fall short.
+The widespread availability of visual programming environments, both online and as free downloadable tools, helps mitigate some of their limitations.
+These environments can serve as an effective introduction to programming concepts, particularly when followed by a structured transition to textual languages, for example through side-by-side comparisons.
+Additionally, their accessibility and interactive nature can increase motivation and improve retention, especially among younger learners~\cite{noone_visual_2018}.
 
 
+Similarly, Fernandes et al.~\cite{fernandes_blocks_2026} found that both block-based and text-based paradigms significantly improve students’ conceptual understanding, but differ in how learners approach programming tasks.
+While visual programming has often been theorised to be easier to use and less error-prone due to reduced syntactic complexity, empirical evidence does not always fully support this assumption.
+Fernandes et al. reported that students using block-based environments made more errors than those using text-based languages.
 
+As mentioned earlier visual scripting was theorized to be easier to use and less error-prone due to its more simple syntax, this however is not necessarily the case, in their study Fernandes et al. \cite{fernandes_blocks_2026} found that those using block-based coding made significantly more errors than those using text-based coding.
+Which they theories could be something to do with the ease by which visual programming tools are to use, where those using text has to take their time considering what they are writing.
+On the other hand the ease by which visual programs are written might be encouraging fast task completion/prototyping, leading to more errors but also a faster task completion.
+
+Furthermore, Fernandes et al.~\cite{fernandes_blocks_2026} conclude that both block-based and text-based programming environments have potential in teaching computational thinking, with neither approach being inherently superior.
+Instead, each paradigm appears to support different conceptual areas more effectively.
+For example, sequences are more clearly understood in text-based environments, whereas procedures are more effectively learned in block-based environments.
 
 While previous research has demonstrated the benefits of visual programming languages and computational thinking in introductory programming education, there remains limited work directly comparing different visual paradigms in the context of teaching software engineering concepts.
 In particular, the distinction between block-based and flow-based or node-based programming approaches has received relatively little attention.
