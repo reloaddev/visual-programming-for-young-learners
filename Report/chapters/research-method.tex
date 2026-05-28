@@ -76,7 +76,7 @@ Users will focus on structure and interaction between blocks, and can get rapid 
 
 \paragraph{Is interactive and facilitates rapid code development}
 Scratch is highly interactive, the users will need to use blocks from most categories to make a game.
-Users have the ability to drag a block of code out of their current coding window and place it in the Scratch backpack. It can be used as a place to save progress or prototypes without getting a cluttered coding window. 
+Users have the ability to drag a block of code out of their current coding window and place it in the Scratch backpack. It can be used as a place to save progress or prototypes without getting a cluttered coding window.
 And with ability to drag these saved code blocks out like from the normal categories, code development can be very rapid.
 
 
@@ -407,8 +407,6 @@ Although it provides \texttt{x} and \texttt{y} values, it does not include a com
 And other game engine won’t have the same level of abstraction as Scratch.
 
 
-
-
 \subsection{Surveys}\label{subsec:surveys}
 The study included both a pre- and a post-survey to determine the students’ assessment of their programming abilities.
 The pre-survey was carried out before the workshop to determine the students’ experience with programming and software design principles.
@@ -425,7 +423,7 @@ Compared to the pre-survey, the post-survey was enriched by additional statement
 Those statements were phrased like “The visual programming language helped me to understand how my game saves and updates data”.
 Similarly to the pre-survey, statements were mapped to the software design concepts we wanted to convey during our workshop, as defined in the previous section.
 The surveys were conducted anonymously, however it was ensured that pre- and post-survey answers could be mapped to the same identifier.
-As recommend in\cite{nemoto_developing_2013}, other data collection methods (multiple-choice test, artifact evaluation) have been added, to get a more complete picture of the research subject.
+As recommend in\cite{nemoto_developing_2013}, other data collection methods (multiple-choice test, code evaluation) have been added, to get a more complete picture of the research subject.
 
 
 The question for both surveys were designed with students in mind, which would have at least a basic understanding of programming and related concepts like variables and control structures.
@@ -481,8 +479,8 @@ To collect additional qualitative data, we took notes throughout the workshop to
 After the pre- and post-surveys, students were asked to answer a multiple choice test.
 In both cases the questions were the same to achieve comparability.
 Since both tests included the same questions, the students were not exposed to the correct answers afterward.
-The multiple choice test included ten questions, where each question had three possible answers to choose from, and another option to indicate that the student does not know the answer.
-One of the questions is shown in [listing].
+The multiple choice test included ten questions, where each question had three possible answers to choose from, and
+another option to indicate that the student does not know the answer. One of the questions is shown below.
 The other questions were designed in a similar way, while addressing other programming concepts too.
 
 \begin{enumerate}
@@ -497,50 +495,22 @@ The other questions were designed in a similar way, while addressing other progr
 	      \textbf{Correct answer: B}
 \end{enumerate}
 
-The overall idea was to create questions that would strike an appropriate difficulty, while also mapping to the concepts we wanted to convey: modularity, instantiation, state management and event handling.
+The overall idea was to create questions that would strike an appropriate difficulty, while also mapping to
+the concepts we wanted to convey: modularity, instantiation, state management and event handling.
 While the questions were the same for both tests, their order was randomized between both trials.
 Having the same questions for both would allow for easy comparability.
-With the help of the questions we wanted to see to what extent the visual programming languages would help improve the student’s understanding of the different concepts.
 
-\subsection{Artifact Evaluation}\label{subsec:artifact-evaluation2}
-Along with surveys and multiple choice test we wanted to also evaluate the student-created artifacts (i.e.\ the game).
-As surveys and tests come with their own limitations, we wanted to add more data measures to get a more complete picture of the students’ learnings throughout the workshop.
-This method has been used in other studies concerned with teaching programming concepts, like~\cite{grover_assessing_2014}.
+With the help of the questions we wanted to see to what extent the visual programming languages would help improve the
+student's understanding of the different concepts.
 
-In order to analyze the student projects in a structured way, we created an evaluation rubric upfront.
-Again, we focused on the four concepts we wanted to convey to the students: modularity, instantiation, state management, event handling.
-For each of them we tried to come up with different levels of “goodness”, i.e.\ how well the students made use of each of the concepts in their projects.
+\subsection{Participant Observation \& Code Evaluation}
+As surveys and tests come with their own limitations, we also observed the students and evaluted their created code.
+This method has been used in other studies concerned with teaching programming concepts, like \cite{grover_assessing_2014}.
+For each of them we took notes regarding how well they understood and applied the different software design principles
+(modularity, instantiation, state management, instantiation). Whereas we documented student behavior in a more unstructured
+manner (i.e. quick notes on paper), we created an evaluation rubric to assess their produced code. We came up with the
+following scale to assess frequency and quality of implementation of all four design concepts.
 
-Modularity was deemed the most straightforward concept out of the four.
-Generally, it is a rather widely defined concept which can appear in different forms.
-For our project, we mainly considered variables and functions (custom blocks in Scratch) as signals of modularity.
-For our evaluation we consider both frequency and quality of usage.
-Accordingly, a “good” student will use modularity correctly whenever it makes sense.
-Features where we expected heavy use of functions and variables were player movement and enemy behavior.
-
-Instantiation is an important concept both in programming in general and specifically in game development.
-The features defined in our game design document made use of instantiation likely to be used to create enemies and projectiles, as those are created in great numbers.
-Again, a “good” student will use instantiation with confidence, whenever it is appropriate.
-Moreover, they might even create a central “factory” to create new instances of an object.
-Finally, we would like to see students using the same instantiation mechanism to create different variants of an object, e.g.\ different variants of ghosts.
-
-State management is similar to modularity a rather wide concept, that can mean different things.
-In our case, we want to focus on conveying the idea of state machines or the related state pattern~\cite{gof_designpatterns_1994}.
-We expect this to be the hardest concept for the students to grasp.
-Therefore, it is only expected to be used for modeling the weapon’s different states like ready and reloading.
-It might be useful with other game features too, however we deem everything that goes beyond to be exceptional.
-For a state machine to be implemented, we expect clear definition of states and transitions, that check for whether the current state is compatible with the next state.
-
-Event handling is a concept that can be hard to implement from scratch.
-However, both Scratch and Godot Orchestrator provide event handling out-of-the-box.
-Thus, students can focus on using those existing mechanisms in their respective projects.
-It is important to mention here, that Scratch’s main way of making different components communicate is events (signals).
-There is no way for one component to invoke another.
-This is different in Godot, which might lead to more non-event-based communication.
-To see event handling effectively implemented, we would like to see that one component listens for events that another component emits.
-In the best case, we would see students use events to decouple components from each other.
-
-To evaluate each software design principle, we came up with the following scales:
 \begin{itemize}
 	\item Frequency: Always, Usually, Often, Sometimes, Never
 	\item Quality: Appropriate, Somewhat Appropriate, Inappropriate
